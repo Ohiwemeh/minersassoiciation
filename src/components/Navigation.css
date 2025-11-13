@@ -1,112 +1,167 @@
 .navigation {
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(26, 26, 26, 0.95);
+  padding: 20px 0;
   z-index: 1000;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.navigation.scrolled {
+  background-color: rgba(26, 26, 26, 0.98);
+  padding: 15px 0;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
 }
 
-.nav-logo h1 {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0;
-  text-decoration: none;
-}
-
-.nav-logo a {
-  text-decoration: none;
-}
-
-.nav-menu {
+.nav-logo {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 2rem;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-icon {
+  color: #d4af37;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .nav-link {
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   text-decoration: none;
+  font-size: 0.9rem;
   font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  font-size: 0.95rem;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 5px 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #d4af37;
+  transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
+  color: #d4af37;
 }
 
-.nav-link.active {
-  color: white;
-  background: rgba(255, 255, 255, 0.2);
+.nav-link:hover::after {
+  width: 100%;
 }
 
-.nav-toggle {
+.search-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.search-button:hover {
+  color: #d4af37;
+  background-color: rgba(212, 175, 55, 0.1);
+}
+
+.mobile-menu-button {
   display: none;
   flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
   cursor: pointer;
+  padding: 5px;
 }
 
-.nav-toggle span {
+.mobile-menu-button span {
   width: 25px;
-  height: 3px;
-  background: white;
-  margin: 3px 0;
-  transition: 0.3s;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .nav-container {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 25px;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    flex-direction: column;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    padding: 2rem 0;
-    gap: 0;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: 1rem 0;
-  }
-
-  .nav-toggle {
+  .mobile-menu-button {
     display: flex;
   }
 
-  .nav-toggle.active span:nth-child(2) {
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: rgba(26, 26, 26, 0.98);
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    transform: translateY(-100%);
     opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
   }
 
-  .nav-toggle.active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
+  .nav-links.mobile-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 
-  .nav-toggle.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+  .nav-link {
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .search-button {
+    margin-top: 10px;
   }
 }
