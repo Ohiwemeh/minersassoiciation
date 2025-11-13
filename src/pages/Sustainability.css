@@ -1,0 +1,385 @@
+.sustainability {
+  padding: 40px 0;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sustainability-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sustainability-header h1 {
+  font-size: 3rem;
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.sustainability-intro {
+  margin-bottom: 60px;
+}
+
+.intro-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.intro-card h2 {
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.intro-card h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #4a9eff;
+}
+
+.intro-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.commitment-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.stat {
+  text-align: center;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  color: #10b981;
+  margin-bottom: 5px;
+}
+
+.stat p {
+  color: #1e3c72;
+  font-weight: 600;
+  margin: 0;
+}
+
+.environmental,
+.social,
+.safety,
+.initiatives,
+.reporting {
+  margin-bottom: 60px;
+}
+
+.environmental h2,
+.social h2,
+.safety h2,
+.initiatives h2,
+.reporting h2 {
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.environmental h2::after,
+.social h2::after,
+.safety h2::after,
+.initiatives h2::after,
+.reporting h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #4a9eff;
+}
+
+.env-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.env-item {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.env-item:hover {
+  transform: translateY(-5px);
+}
+
+.env-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.env-item h3 {
+  font-size: 1.3rem;
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+.env-item p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.social-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.social-card h3 {
+  font-size: 1.3rem;
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+.social-card p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.social-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-card li {
+  padding: 8px 0;
+  color: #64748b;
+  position: relative;
+  padding-left: 25px;
+}
+
+.social-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+.safety-content {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.safety-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.safety-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.metric h4 {
+  color: #1e3c72;
+  margin-bottom: 5px;
+}
+
+.metric p {
+  color: #64748b;
+  margin: 0;
+}
+
+.safety-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.safety-icon {
+  font-size: 6rem;
+  color: #4a9eff;
+}
+
+.initiatives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.initiative-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.initiative-card h3 {
+  font-size: 1.3rem;
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+.initiative-card p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.initiative-progress {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #4a9eff);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.initiative-progress span {
+  color: #1e3c72;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.reporting-content {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.reporting-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.report-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.report-btn {
+  padding: 12px 24px;
+  background: #4a9eff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.report-btn:hover {
+  background: #3a8eef;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .sustainability-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .intro-card {
+    padding: 30px 20px;
+  }
+  
+  .intro-card h2,
+  .environmental h2,
+  .social h2,
+  .safety h2,
+  .initiatives h2,
+  .reporting h2 {
+    font-size: 1.8rem;
+  }
+  
+  .env-grid,
+  .social-grid,
+  .initiatives-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .safety-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .report-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .commitment-stats {
+    grid-template-columns: 1fr;
+  }
+}

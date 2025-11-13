@@ -1,0 +1,248 @@
+.about-us {
+  padding: 40px 0;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about-mission,
+.about-vision,
+.about-history {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-mission h2,
+.about-vision h2,
+.about-history h2 {
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.about-mission h2::after,
+.about-vision h2::after,
+.about-history h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #4a9eff;
+}
+
+.about-mission p,
+.about-vision p,
+.about-history p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.about-leadership {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-leadership h2 {
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.about-leadership h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #4a9eff;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.leader-card {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background: #f8fafc;
+  transition: transform 0.3s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-5px);
+}
+
+.leader-photo {
+  margin-bottom: 20px;
+}
+
+.photo-placeholder {
+  width: 100px;
+  height: 100px;
+  background: #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #64748b;
+  margin: 0 auto;
+}
+
+.leader-card h3 {
+  font-size: 1.3rem;
+  color: #1e3c72;
+  margin-bottom: 5px;
+}
+
+.leader-title {
+  color: #4a9eff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.leader-bio {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.about-values {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-values h2 {
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.about-values h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #4a9eff;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.value-item {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background: #f8fafc;
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.value-item h3 {
+  font-size: 1.3rem;
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+.value-item p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .about-mission,
+  .about-vision,
+  .about-history,
+  .about-leadership,
+  .about-values {
+    padding: 30px 20px;
+  }
+  
+  .about-mission h2,
+  .about-vision h2,
+  .about-history h2,
+  .about-leadership h2,
+  .about-values h2 {
+    font-size: 1.8rem;
+  }
+  
+  .leadership-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
