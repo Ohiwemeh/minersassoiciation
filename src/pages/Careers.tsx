@@ -1,4 +1,4 @@
-import './Careers.css'
+
 
 const Careers = () => {
   const jobOpenings = [
