@@ -10,6 +10,7 @@ import Investors from './pages/Investors'
 import News from './pages/News'
 import Careers from './pages/Careers'
 import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
 import './App.css'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/news" element={<News />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

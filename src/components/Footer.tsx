@@ -86,9 +86,9 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>&copy; 2025 Universal Metals. All rights reserved.</p>
         <div className="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
+          <Link to="/privacy">Privacy Policy</Link>
           <span>|</span>
-          <a href="#">Terms of Service</a>
+          <Link to="/terms">Terms of Service</Link>
         </div>
       </div>
     </footer>

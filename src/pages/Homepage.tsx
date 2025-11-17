@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
+import { Link, useNavigate } from 'react-router'
 import './Homepage.css'
 
 const Homepage = () => {
+  const navigate = useNavigate()
   const [showContactModal, setShowContactModal] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
@@ -188,7 +190,7 @@ const Homepage = () => {
             <p>
               With operations spanning multiple continents, we have established ourselves as a trusted partner in the global minerals market. Our focus on innovation, sustainability, and community engagement sets us apart in the industry.
             </p>
-            <button className="about-button">READ MORE</button>
+            <button className="about-button" onClick={() => navigate('/about')}>READ MORE</button>
           </div>
         </div>
       </section>
@@ -245,7 +247,7 @@ const Homepage = () => {
               <p className="news-excerpt">
                 Exploring the intersection of geological science and business strategy in modern mining operations. Learn how Universal Metals approaches mineral exploration with both technical expertise and commercial acumen.
               </p>
-              <a href="#" className="news-link">READ MORE →</a>
+              <Link to="/news" className="news-link">READ MORE →</Link>
             </div>
           </div>
 
@@ -259,7 +261,7 @@ const Homepage = () => {
               <p className="news-excerpt">
                 Discover how digital transformation is revolutionizing mine planning and operations. Universal Metals leads the way in adopting cutting-edge technology for improved efficiency and safety.
               </p>
-              <a href="#" className="news-link">READ MORE →</a>
+              <Link to="/news" className="news-link">READ MORE →</Link>
             </div>
           </div>
 
@@ -273,12 +275,12 @@ const Homepage = () => {
               <p className="news-excerpt">
                 An exclusive interview with our CEO about the future of mining technology and sustainable practices. Learn about our vision for the next generation of mineral extraction and processing.
               </p>
-              <a href="#" className="news-link">READ MORE →</a>
+              <Link to="/news" className="news-link">READ MORE →</Link>
             </div>
           </div>
         </div>
         <div className="load-more-container reveal">
-          <button className="load-more-button">ALL NEWS</button>
+          <button className="load-more-button" onClick={() => navigate('/news')}>ALL NEWS</button>
         </div>
       </section>
 
