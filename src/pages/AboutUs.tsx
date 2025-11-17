@@ -9,7 +9,7 @@ const AboutUs = () => {
       {/* Hero Section */}
       <section 
         className="page-hero" 
-        style={{ backgroundImage: 'url(/min%20(5).jpg)' }}
+        style={{ backgroundImage: 'url(https://res.cloudinary.com/dufw6bsko/image/upload/v1763397091/min_5_iisxwm.jpg)' }}
       >
         <div className="page-hero-content">
           <h1 className="page-hero-title">ABOUT US</h1>
@@ -26,7 +26,7 @@ const AboutUs = () => {
           <div className="grid-2">
             <div className="reveal-left">
               <img 
-                src="/min (2).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397106/min_2_kbhgz7.jpg" 
                 alt="Mining operations" 
                 className="feature-image"
                 style={{ height: '400px' }}

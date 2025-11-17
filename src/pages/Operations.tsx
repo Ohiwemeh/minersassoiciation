@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import '../pages/SharedStyles.css'
 
@@ -9,7 +10,7 @@ const Operations = () => {
       {/* Hero Section */}
       <section 
         className="page-hero" 
-        style={{ backgroundImage: 'url(/min%20(3).jpg)' }}
+        style={{ backgroundImage: 'url(https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_3_q5bn0x.jpg)' }}
       >
         <div className="page-hero-content">
           <h1 className="page-hero-title">OPERATIONS & PROJECTS</h1>
@@ -73,7 +74,7 @@ const Operations = () => {
           <div className="grid-2" style={{ gap: '40px' }}>
             <div className="card reveal">
               <img 
-                src="/min (1).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/landing_onfdtb.jpg" 
                 alt="Golden Ridge Mine" 
                 style={{ width: '100%', height: '250px', objectFit: 'cover', marginBottom: '20px' }}
               />
@@ -102,7 +103,7 @@ const Operations = () => {
 
             <div className="card reveal">
               <img 
-                src="/min (4).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_4_l3ijmr.jpg" 
                 alt="Silverstone Complex" 
                 style={{ width: '100%', height: '250px', objectFit: 'cover', marginBottom: '20px' }}
               />
@@ -131,7 +132,7 @@ const Operations = () => {
 
             <div className="card reveal">
               <img 
-                src="/min (6).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_6_tyd5ov.jpg" 
                 alt="Copper Valley Project" 
                 style={{ width: '100%', height: '250px', objectFit: 'cover', marginBottom: '20px' }}
               />
@@ -160,7 +161,7 @@ const Operations = () => {
 
             <div className="card reveal">
               <img 
-                src="/min (2).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397106/min_2_kbhgz7.jpg" 
                 alt="Diamond Peak Mine" 
                 style={{ width: '100%', height: '250px', objectFit: 'cover', marginBottom: '20px' }}
               />
@@ -282,13 +283,13 @@ const Operations = () => {
                 <li>Focus on tier-1 jurisdictions with proven mineral potential</li>
                 <li>Comprehensive environmental and social impact assessments</li>
               </ul>
-              <button className="btn btn-primary" style={{ marginTop: '20px' }}>
+              <Link className="btn btn-primary border-none border-r-8 overflow-hidden " style={{ marginTop: '20px' }}>
                 VIEW EXPLORATION PORTFOLIO
-              </button>
+              </Link>
             </div>
             <div className="reveal-right">
               <img 
-                src="/min (5).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397091/min_5_iisxwm.jpg" 
                 alt="Exploration activities" 
                 className="feature-image"
                 style={{ height: '450px' }}
