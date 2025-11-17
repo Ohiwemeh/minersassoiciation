@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router'
 import './Homepage.css'
+import img from '../assets/landing.jpg'
 
 const Homepage = () => {
   const navigate = useNavigate()
@@ -52,7 +53,7 @@ const Homepage = () => {
   return (
     <div className="homepage">
       {/* Hero Section */}
-      <section className="hero-section parallax" style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/min%20(2).jpg)' }}>
+     <section className="hero-section parallax" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${img})` }} >
         <div className="hero-content">
           <h1 className="hero-title">UNIVERSAL METALS</h1>
           <h2 className="hero-subtitle">DEDICATED TO BUILDING BUSINESS UPON INTEGRITY & HONESTY</h2>
