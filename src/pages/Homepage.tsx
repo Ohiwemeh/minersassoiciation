@@ -57,7 +57,7 @@ const Homepage = () => {
         <div className="hero-content">
           <h1 className="hero-title">UNIVERSAL METALS</h1>
           <h2 className="hero-subtitle">DEDICATED TO BUILDING BUSINESS UPON INTEGRITY & HONESTY</h2>
-          <button className="hero-button" onClick={() => setShowContactModal(true)}>
+          <button className="hero-button" onClick={() => navigate('/about')}>
             DISCOVER MORE
           </button>
         </div>
