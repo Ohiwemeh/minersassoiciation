@@ -20,10 +20,7 @@ const Navigation = () => {
       <div className="nav-container">
         <Link to="/" className="nav-logo">
           <div className="logo-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-              <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
-            </svg>
+           <img src='https://res.cloudinary.com/dufw6bsko/image/upload/v1763543111/slazzer-preview-5qofr_bel3he.png' width={60}/>
           </div>
         </Link>
         
@@ -42,6 +39,7 @@ const Navigation = () => {
           <Link to="/operations" className="nav-link">OPERATIONS</Link>
           <Link to="/services" className="nav-link">SERVICES</Link>
           <Link to="/investors" className="nav-link">INVESTORS</Link>
+          <Link to="/membership" className="nav-link">MEMBERSHIP</Link>
           <Link to="/news" className="nav-link">NEWS</Link>
           <Link to="/contact" className="nav-link">CONTACT</Link>
           <button className="search-button">

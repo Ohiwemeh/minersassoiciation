@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router'
 import './Homepage.css'
-import img from '../assets/landing.jpg'
+
 
 const Homepage = () => {
   const navigate = useNavigate()
@@ -53,7 +53,7 @@ const Homepage = () => {
   return (
     <div className="homepage">
       {/* Hero Section */}
-     <section className="hero-section parallax" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${img})` }} >
+     <section className="hero-section parallax" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/landing_onfdtb.jpg)` }} >
         <div className="hero-content">
           <h1 className="hero-title">UNIVERSAL METALS</h1>
           <h2 className="hero-subtitle">DEDICATED TO BUILDING BUSINESS UPON INTEGRITY & HONESTY</h2>
@@ -175,7 +175,7 @@ const Homepage = () => {
         <div className="about-content">
           <div className="reveal">
             <img 
-              src="/min (5).jpg" 
+              src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397091/min_5_iisxwm.jpg" 
               alt="Mining operations" 
               className="about-image"
             />
@@ -183,14 +183,8 @@ const Homepage = () => {
           <div className="about-text reveal">
             <h2>ABOUT US</h2>
             <p>
-              Universal Metals is a leading mining company with a proven track record of successful exploration, development, and operation of mineral properties. Founded on principles of integrity and honesty, we have built a reputation for excellence in the mining industry.
-            </p>
-            <p>
-              Our team of experienced professionals brings together expertise in geology, mining engineering, environmental science, and business management. We are committed to creating value for our shareholders while maintaining the highest standards of corporate responsibility.
-            </p>
-            <p>
-              With operations spanning multiple continents, we have established ourselves as a trusted partner in the global minerals market. Our focus on innovation, sustainability, and community engagement sets us apart in the industry.
-            </p>
+                The Miners Association of Nigeria (MAN) is a National Industry Association whose diverse membership includes entities and individuals that are directly involved in mineral resources exploration and exploitation in Nigeria. MAN membership comprises of exploration, quarrying, and mining companies. It also encompasses services and Consultancy firms that relate to mining sector.
+              </p>
             <button className="about-button" onClick={() => navigate('/about')}>READ MORE</button>
           </div>
         </div>

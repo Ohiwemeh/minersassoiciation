@@ -57,9 +57,8 @@ const Contact = () => {
               </div>
               <h3 className="card-title">HEAD OFFICE</h3>
               <p className="card-description">
-                123 Mining Street<br />
-                New York, NY 10001<br />
-                United States
+              MINERS ASSOIATION OF NIGERIA NATIONAL HEADQUARTERS, 1t floor NEXIM House, Plot 975 Cadastral Zone AO, Central Business District, Abuja, Nigeria. 
+
               </p>
             </div>
             <div className="card reveal">
@@ -70,9 +69,8 @@ const Contact = () => {
               </div>
               <h3 className="card-title">PHONE</h3>
               <p className="card-description">
-                Main: +1 (212) 555-0100<br />
-                Toll-Free: 1-800-MINING<br />
-                Fax: +1 (212) 555-0101
+                Main: +234(0)7089827055<br />
+                +234 (0)8034092599
               </p>
             </div>
             <div className="card reveal">

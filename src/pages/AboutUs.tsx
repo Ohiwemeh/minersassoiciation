@@ -7,9 +7,9 @@ const AboutUs = () => {
   return (
     <div className="page-container">
       {/* Hero Section */}
-      <section 
-        className="page-hero" 
-        style={{ backgroundImage: 'url(/min%20(5).jpg)' }}
+      <section
+        className="page-hero"
+        style={{ backgroundImage: 'url(https://res.cloudinary.com/dufw6bsko/image/upload/v1763397091/min_5_iisxwm.jpg)' }}
       >
         <div className="page-hero-content">
           <h1 className="page-hero-title">ABOUT US</h1>
@@ -25,9 +25,9 @@ const AboutUs = () => {
           <h2 className="section-title reveal">WHO WE ARE</h2>
           <div className="grid-2">
             <div className="reveal-left">
-              <img 
-                src="/min (2).jpg" 
-                alt="Mining operations" 
+              <img
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397106/min_2_kbhgz7.jpg"
+                alt="Mining operations"
                 className="feature-image"
                 style={{ height: '400px' }}
               />
@@ -35,13 +35,13 @@ const AboutUs = () => {
             <div className="text-content reveal-right">
               <h3>Leading the Mining Industry</h3>
               <p>
-                Universal Metals is a leading mining company with a proven track record of successful exploration, development, and operation of mineral properties. Founded on principles of integrity and honesty, we have built a reputation for excellence in the mining industry.
+                The Miners Association of Nigeria (MAN) is a National Industry Association whose diverse membership includes entities and individuals that are directly involved in mineral resources exploration and exploitation in Nigeria. MAN membership comprises of exploration, quarrying, and mining companies. It also encompasses services and Consultancy firms that relate to mining sector.
               </p>
               <p>
-                Our team of experienced professionals brings together expertise in geology, mining engineering, environmental science, and business management. We are committed to creating value for our shareholders while maintaining the highest standards of corporate responsibility.
-              </p>
+                At inception in 1944, the Association was called the Association of African Miners and it was meant to protect the interest of the African mine workers. Later in its history after the independence, it transmuted into an association of Nigerian Mine Owners which late changed its name to Miners Association of Nigeria in 1993. It is the umbrella body of all other trade and industry. </p>
               <p>
-                With operations spanning multiple continents, we have established ourselves as a trusted partner in the global minerals market. Our focus on innovation, sustainability, and community engagement sets us apart in the industry.
+                MAN is a very responsible Association of mine owners which include Artisanal and Small-Scale Miners, Quarry operators, Traders of Mining products, etc. The Association has been collaborating with the Ministry of Solid Minerals Development and its agencies to achieve every success in the ongoing reform initiative of the Government agencies and international Community through their Embassies, on behalf of the indigenous operators (members) so as to harness the mineral potentials of the country.
+
               </p>
             </div>
           </div>
@@ -62,7 +62,7 @@ const AboutUs = () => {
               </div>
               <h3 className="card-title">OUR MISSION</h3>
               <p className="card-description">
-                To responsibly extract and process mineral resources while creating sustainable value for our stakeholders, protecting the environment, and contributing positively to the communities where we operate. We strive to be the industry leader in safety, innovation, and operational excellence.
+               To positively engage the Governments, there agencies and other critical stakeholders to provide enabling environment for mining activities to thrive.
               </p>
             </div>
             <div className="card dark reveal">
@@ -74,7 +74,7 @@ const AboutUs = () => {
               </div>
               <h3 className="card-title">OUR VISION</h3>
               <p className="card-description">
-                To be recognized globally as the most trusted and innovative mining company, setting new standards for sustainable resource development. We envision a future where mining operations coexist harmoniously with nature and local communities, powered by cutting-edge technology and ethical practices.
+                To move mining activities to greater heights in which operators would be empowered to mine with ease for the betterment of mining industry, wealth creation, and employment generation in Nigeria.
               </p>
             </div>
           </div>
