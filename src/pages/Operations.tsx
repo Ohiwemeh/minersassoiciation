@@ -283,7 +283,7 @@ const Operations = () => {
                 <li>Focus on tier-1 jurisdictions with proven mineral potential</li>
                 <li>Comprehensive environmental and social impact assessments</li>
               </ul>
-              <Link className="btn btn-primary border-none border-r-8 overflow-hidden " style={{ marginTop: '20px' }}>
+              <Link to="/" className="btn btn-primary border-none border-r-8 overflow-hidden " style={{ marginTop: '20px' }}>
                 VIEW EXPLORATION PORTFOLIO
               </Link>
             </div>
