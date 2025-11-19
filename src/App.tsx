@@ -9,6 +9,7 @@ import Services from './pages/Services'
 import Investors from './pages/Investors'
 import News from './pages/News'
 import Careers from './pages/Careers'
+import Membership from './pages/Membership'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 import './App.css'
@@ -28,6 +29,7 @@ function App() {
             <Route path="/investors" element={<Investors />} />
             <Route path="/news" element={<News />} />
             <Route path="/careers" element={<Careers />} />
+            <Route path="/membership" element={<Membership />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

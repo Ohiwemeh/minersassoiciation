@@ -32,6 +32,7 @@ const Footer = () => {
           <h4 className="footer-title">RESOURCES</h4>
           <ul className="footer-links">
             <li><Link to="/investors">Investors</Link></li>
+            <li><Link to="/membership">Membership</Link></li>
             <li><Link to="/news">News & Media</Link></li>
             <li><Link to="/careers">Careers</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
