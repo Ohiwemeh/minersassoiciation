@@ -1,20 +1,62 @@
 import { useEffect, useRef, useState } from 'react';
 
-const LocationsMap = () => {
-  const mapRef = useRef(null);
-  const mapInstanceRef = useRef(null);
-  const [isLoaded, setIsLoaded] = useState(false);
+type LeafletMap = {
+  setView: (coords: [number, number], zoom?: number) => LeafletMap;
+  remove: () => void;
+};
 
-   const locations = [
-    { 
-      name: 'Abuja Office', 
-      city: 'Abuja', 
-      lat: 9.072264, 
-      lng: 7.491302, 
-      region: 'Nigeria',
-      address: '1st floor NEXIM House, Plot 975 Cadastral Zone AO, Central Business District, Abuja, Nigeria'
-    }
-  ];
+type LeafletTileLayer = {
+  addTo: (map: LeafletMap) => LeafletTileLayer;
+};
+
+type LeafletMarker = {
+  addTo: (map: LeafletMap) => LeafletMarker;
+  bindPopup: (html: string) => LeafletMarker;
+};
+
+type Leaflet = {
+  map: (el: HTMLElement) => LeafletMap;
+  tileLayer: (
+    url: string,
+    options: { attribution?: string; maxZoom?: number }
+  ) => LeafletTileLayer;
+  divIcon: (opts: {
+    className?: string;
+    html?: string;
+    iconSize?: [number, number];
+    iconAnchor?: [number, number];
+    popupAnchor?: [number, number];
+  }) => unknown;
+  marker: (
+    coords: [number, number],
+    opts: { icon?: unknown }
+  ) => LeafletMarker;
+};
+
+type Location = {
+  name: string;
+  city: string;
+  lat: number;
+  lng: number;
+  region: string;
+  address: string;
+};
+
+const locations: Location[] = [
+  { 
+    name: 'Abuja Office', 
+    city: 'Abuja', 
+    lat: 9.072264, 
+    lng: 7.491302, 
+    region: 'Nigeria',
+    address: '1st floor NEXIM House, Plot 975 Cadastral Zone AO, Central Business District, Abuja, Nigeria'
+  }
+];
+
+const LocationsMap = () => {
+  const mapRef = useRef<HTMLDivElement | null>(null);
+  const mapInstanceRef = useRef<LeafletMap | null>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     // Load Leaflet CSS
@@ -39,9 +81,9 @@ const LocationsMap = () => {
 
   useEffect(() => {
     if (isLoaded && mapRef.current && !mapInstanceRef.current) {
-      // Initialize map
-      const L = window.L;
-      const map = L.map(mapRef.current).setView([20, 0], 2);
+      // Initialize map centered on Abuja
+      const L = (window as unknown as { L: Leaflet }).L;
+      const map = L.map(mapRef.current).setView([9.072264, 7.491302], 13);
 
       // Add tile layer
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -75,14 +117,16 @@ const LocationsMap = () => {
         popupAnchor: [0, -30]
       });
 
-      // Add markers
+      // Add markers with full address in popup
       locations.forEach(location => {
         L.marker([location.lat, location.lng], { icon: customIcon })
           .addTo(map)
           .bindPopup(`
-            <div style="text-align: center; padding: 5px;">
+            <div style="text-align: center; padding: 10px; min-width: 250px;">
               <strong style="font-size: 16px; color: #1f2937;">${location.city}</strong><br/>
-              <span style="color: #6b7280; font-size: 14px;">${location.region}</span>
+              <span style="color: #6b7280; font-size: 13px; display: block; margin-top: 8px; line-height: 1.5;">
+                ${location.address}
+              </span>
             </div>
           `);
       });
@@ -107,7 +151,7 @@ const LocationsMap = () => {
         marginBottom: '30px',
         letterSpacing: '2px'
       }}>
-        OUR LOCATIONS
+        OUR LOCATION
       </h2>
       
       <div style={{
@@ -123,13 +167,13 @@ const LocationsMap = () => {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
         gap: '20px',
         marginTop: '30px'
       }}>
         {locations.map((location, index) => (
           <div key={index} style={{
-            padding: '20px',
+            padding: '25px',
             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
             borderRadius: '10px',
             color: 'white',
@@ -141,14 +185,14 @@ const LocationsMap = () => {
           onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
           onClick={() => {
             if (mapInstanceRef.current) {
-              mapInstanceRef.current.setView([location.lat, location.lng], 10);
+              mapInstanceRef.current.setView([location.lat, location.lng], 15);
             }
           }}>
-            <div style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '5px' }}>
+            <div style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '8px' }}>
               {location.city}
             </div>
-            <div style={{ fontSize: '14px', opacity: 0.9 }}>
-              {location.region}
+            <div style={{ fontSize: '14px', opacity: 0.9, lineHeight: '1.6' }}>
+              {location.address}
             </div>
           </div>
         ))}
