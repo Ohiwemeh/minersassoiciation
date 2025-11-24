@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router'
+import LocationsMap from '../components/LocationMap'
 import './Homepage.css'
 
 
@@ -191,31 +192,7 @@ const Homepage = () => {
       </section>
 
       {/* Map Section */}
-      <section className="map-section">
-        <h2 className="section-title reveal">OUR LOCATIONS</h2>
-        <div className="map-container reveal" style={{ backgroundImage: 'url(/min (6).jpg)' }}>
-          <div className="map-marker" style={{ top: '30%', left: '20%' }} title="North America">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-            </svg>
-          </div>
-          <div className="map-marker" style={{ top: '50%', left: '45%' }} title="Africa">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-            </svg>
-          </div>
-          <div className="map-marker" style={{ top: '40%', left: '70%' }} title="Asia">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-            </svg>
-          </div>
-          <div className="map-marker" style={{ top: '70%', left: '80%' }} title="Australia">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-            </svg>
-          </div>
-        </div>
-      </section>
+      <LocationsMap />
 
       {/* Partners Section */}
       <section className="partners-section">

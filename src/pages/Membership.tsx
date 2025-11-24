@@ -32,6 +32,15 @@ const Membership = () => {
     'Nigerian Society of Mining Engineers (NSME)'
   ]
 
+  const stateChapters = [
+    'Abia', 'Adamawa', 'Anambra', 'Bauchi', 'Benue', 'Bayelsa', 'Borno', 
+    'Cross-River', 'Delta', 'Ebonyi', 'Edo', 'Ekiti', 'Enugu', 'Gombe', 
+    'Imo', 'Jigawa', 'Kaduna', 'Katsina', 'Kano', 'Kebbi', 'Kogi', 
+    'Kwara', 'Lagos', 'Nasarawa', 'Niger', 'Ogun', 'Ondo', 'Osun', 
+    'Oyo', 'Plateau', 'Rivers', 'Sokoto', 'Taraba', 'Yobe', 'Zamfara', 
+    'FCT- Abuja'
+  ]
+
   return (
     <div className="page-container">
       {/* Hero Section */}
@@ -186,6 +195,56 @@ const Membership = () => {
                   Only legitimate licensed operators are allowed to register as members of MAN. This is imperative in order to promote sanity and due process in the mining sector in Nigeria.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* State Chapters */}
+      <section className="content-section">
+        <div className="section-container">
+          <h2 className="section-title reveal">STATE CHAPTERS</h2>
+          <p className="section-subtitle reveal">
+            Our association has a strong presence across all states in Nigeria and the Federal Capital Territory
+          </p>
+          <div className="card reveal" style={{ padding: '40px' }}>
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
+              gap: '15px',
+              textAlign: 'center'
+            }}>
+              {stateChapters.map((state, index) => (
+                <div key={index} style={{ 
+                  backgroundColor: '#f8f9fa',
+                  padding: '15px 10px',
+                  borderRadius: '6px',
+                  border: '2px solid #e9ecef',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer'
+                }}>
+                  <div style={{ 
+                    fontWeight: '600', 
+                    color: '#2c3e50',
+                    fontSize: '0.95rem'
+                  }}>
+                    {state}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div style={{ 
+              textAlign: 'center', 
+              marginTop: '30px',
+              padding: '20px',
+              backgroundColor: 'rgba(212, 175, 55, 0.1)',
+              borderRadius: '8px',
+              border: '1px solid #d4af37'
+            }}>
+              <h4 style={{ color: '#d4af37', marginBottom: '10px' }}>NATIONWIDE COVERAGE</h4>
+              <p style={{ margin: 0, fontSize: '1.1rem' }}>
+                With <strong>36 state chapters</strong> plus the <strong>FCT-Abuja</strong>, MAN ensures representation and support for miners across every region of Nigeria.
+              </p>
             </div>
           </div>
         </div>

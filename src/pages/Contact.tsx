@@ -208,7 +208,7 @@ const Contact = () => {
       </section>
 
       {/* Office Locations */}
-      <section className="content-section">
+      {/* <section className="content-section">
         <div className="section-container">
           <h2 className="section-title reveal">GLOBAL OFFICES</h2>
           <div className="grid-4">
@@ -246,7 +246,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Business Hours */}
       <section className="content-section dark">

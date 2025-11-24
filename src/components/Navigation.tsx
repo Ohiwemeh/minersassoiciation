@@ -34,14 +34,15 @@ const Navigation = () => {
         </button>
 
         <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-          <Link to="/" className="nav-link">HOME</Link>
-          <Link to="/about" className="nav-link">ABOUT</Link>
-          <Link to="/operations" className="nav-link">OPERATIONS</Link>
-          <Link to="/services" className="nav-link">SERVICES</Link>
-          <Link to="/investors" className="nav-link">INVESTORS</Link>
-          <Link to="/membership" className="nav-link">MEMBERSHIP</Link>
-          <Link to="/news" className="nav-link">NEWS</Link>
-          <Link to="/contact" className="nav-link">CONTACT</Link>
+          <Link to="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>HOME</Link>
+          <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>ABOUT</Link>
+          <Link to="/operations" className="nav-link" onClick={() => setMobileMenuOpen(false)}>OPERATIONS</Link>
+          <Link to="/services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>SERVICES</Link>
+          {/* <Link to="/programs" className="nav-link" onClick={() => setMobileMenuOpen(false)}>PROGRAMS</Link> */}
+          <Link to="/investors" className="nav-link" onClick={() => setMobileMenuOpen(false)}>INVESTORS</Link>
+          <Link to="/membership" className="nav-link" onClick={() => setMobileMenuOpen(false)}>MEMBERSHIP</Link>
+          <Link to="/news" className="nav-link" onClick={() => setMobileMenuOpen(false)}>NEWS</Link>
+          <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>CONTACT</Link>
           <button className="search-button">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="11" cy="11" r="8"></circle>

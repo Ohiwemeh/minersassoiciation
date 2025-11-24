@@ -48,6 +48,118 @@ const AboutUs = () => {
         </div>
       </section>
 
+      {/* Organizational Structure */}
+      <section className="content-section gray">
+        <div className="section-container">
+          <h2 className="section-title reveal">ORGANIZATIONAL STRUCTURE</h2>
+          <p className="section-subtitle reveal">
+            A well-structured association designed to capture all categories of miners in Nigeria
+          </p>
+          <div className="grid-2">
+            <div className="card reveal" style={{ padding: '30px' }}>
+              <h3 className="card-title" style={{ marginBottom: '20px', color: '#d4af37' }}>COMPREHENSIVE REPRESENTATION</h3>
+              <p style={{ marginBottom: '20px', lineHeight: '1.6' }}>
+                Miners Association of Nigeria (MAN) is the only business Association in the Mining Industry that is well structured to capture all categories of Miners in Nigeria:
+              </p>
+              <ul style={{ listStyle: 'none', padding: 0, marginBottom: '20px' }}>
+                <li style={{ 
+                  padding: '10px 0', 
+                  borderBottom: '1px solid #eee',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px'
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#d4af37">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  Gemstones Miners and Marketers Association of Nigeria
+                </li>
+                <li style={{ 
+                  padding: '10px 0', 
+                  borderBottom: '1px solid #eee',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px'
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#d4af37">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  Dimension Stones Association of Nigeria
+                </li>
+                <li style={{ 
+                  padding: '10px 0', 
+                  borderBottom: '1px solid #eee',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px'
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#d4af37">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  Association of Miners and Processors of Barite
+                </li>
+                <li style={{ 
+                  padding: '10px 0', 
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px'
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#d4af37">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  And many other specialized mining associations
+                </li>
+              </ul>
+            </div>
+            <div className="card reveal" style={{ padding: '30px' }}>
+              <h3 className="card-title" style={{ marginBottom: '20px', color: '#d4af37' }}>GOVERNANCE STRUCTURE</h3>
+              <div style={{ marginBottom: '25px' }}>
+                <div style={{ 
+                  backgroundColor: 'rgba(212, 175, 55, 0.1)', 
+                  border: '2px solid #d4af37', 
+                  borderRadius: '8px', 
+                  padding: '20px',
+                  marginBottom: '20px'
+                }}>
+                  <h4 style={{ color: '#d4af37', marginBottom: '10px', fontSize: '1.1rem' }}>NATIONAL LEVEL</h4>
+                  <p style={{ margin: 0, fontWeight: '600', fontSize: '1.2rem', color: '#2c3e50' }}>
+                    9 Elected Executive Officers
+                  </p>
+                  <p style={{ margin: '5px 0 0 0', color: '#666' }}>
+                    Leading the association's strategic direction and national initiatives
+                  </p>
+                </div>
+                <div style={{ 
+                  backgroundColor: '#f8f9fa', 
+                  border: '2px solid #e9ecef', 
+                  borderRadius: '8px', 
+                  padding: '20px'
+                }}>
+                  <h4 style={{ color: '#2c3e50', marginBottom: '10px', fontSize: '1.1rem' }}>STATE CHAPTERS</h4>
+                  <p style={{ margin: 0, fontWeight: '600', fontSize: '1.2rem', color: '#2c3e50' }}>
+                    State Executive Committees
+                  </p>
+                  <p style={{ margin: '5px 0 0 0', color: '#666' }}>
+                    Each of the 36 states plus FCT-Abuja has its own executive committee managing local operations and member interests
+                  </p>
+                </div>
+              </div>
+              <div style={{ 
+                textAlign: 'center', 
+                padding: '15px',
+                backgroundColor: 'rgba(212, 175, 55, 0.05)',
+                borderRadius: '6px',
+                border: '1px solid #d4af37'
+              }}>
+                <p style={{ margin: 0, fontSize: '1rem', fontStyle: 'italic' }}>
+                  "All member associations are integral parts of MAN, creating a unified voice for Nigeria's mining industry"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Vision */}
       <section className="content-section dark">
         <div className="section-container">

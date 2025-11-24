@@ -5,6 +5,16 @@ import '../pages/SharedStyles.css'
 const Operations = () => {
   useScrollReveal()
 
+  const mineralTypes = [
+    'Barite', 'Gypsum', 'Talc', 'Diatomite', 'Silica Sand', 'Bentonite', 'Limestone', 
+    'Mica', 'Phosphate Rock', 'Clay', 'Marble', 'Magnesite', 'Feldspar', 'Kyanite', 
+    'Flourite', 'Rutile', 'Wolframite', 'Bismuth', 'Argentite', 'Molybdenite', 
+    'Ililmenite', 'Lithium', 'Sillimanite', 'Cassiterite', 'Gold', 'Coal', 'Bitumen', 
+    'Gemstones', 'Chromite', 'Sperrylite', 'Uraninite', 'Galena', 'Sphalerite', 
+    'Manganese', 'Tantalite', 'Columbite', 'Iron Ore', 'Vanadinite', 'Cobaltite', 
+    'Chalcopyrite', 'Rare Earth Metal', 'Pentlandite', 'Stibnite'
+  ]
+
   return (
     <div className="page-container">
       {/* Hero Section */}
@@ -261,6 +271,53 @@ const Operations = () => {
             <div className="stat-item">
               <div className="stat-number">15M</div>
               <div className="stat-label">Tons Processed Annually</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mineral Types in Nigeria */}
+      <section className="content-section gray">
+        <div className="section-container">
+          <h2 className="section-title reveal">MINERAL TYPES IN NIGERIA</h2>
+          <p className="section-subtitle reveal">
+            Nigeria is endowed with over 44 different mineral types occurring in more than 500 locations across the country
+          </p>
+          <div className="card reveal" style={{ padding: '40px' }}>
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', 
+              gap: '12px'
+            }}>
+              {mineralTypes.map((mineral, index) => (
+                <div key={index} style={{ 
+                  backgroundColor: '#fff',
+                  padding: '12px 16px',
+                  borderRadius: '6px',
+                  border: '2px solid #e9ecef',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer',
+                  textAlign: 'center',
+                  fontWeight: '500',
+                  color: '#2c3e50',
+                  fontSize: '0.9rem'
+                }}>
+                  {mineral}
+                </div>
+              ))}
+            </div>
+            <div style={{ 
+              textAlign: 'center', 
+              marginTop: '30px',
+              padding: '20px',
+              backgroundColor: 'rgba(212, 175, 55, 0.1)',
+              borderRadius: '8px',
+              border: '1px solid #d4af37'
+            }}>
+              <h4 style={{ color: '#d4af37', marginBottom: '10px' }}>RICH MINERAL ENDOWMENT</h4>
+              <p style={{ margin: 0, fontSize: '1.1rem' }}>
+                With <strong>44+ mineral types</strong> found across <strong>500+ locations</strong>, Nigeria possesses one of the most diverse mineral portfolios in Africa, offering immense opportunities for mining investment and development.
+              </p>
             </div>
           </div>
         </div>
