@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router'
 import LocationsMap from '../components/LocationMap'
+import SponsorsCarousel from '../components/SponsorsCarousel'
 import './Homepage.css'
 
 
@@ -195,15 +196,7 @@ const Homepage = () => {
       <LocationsMap />
 
       {/* Partners Section */}
-      <section className="partners-section">
-        <h2 className="section-title reveal">OUR PARTNERS</h2>
-        <div className="partners-grid reveal">
-          <div className="partner-placeholder">PARTNER 1</div>
-          <div className="partner-placeholder">PARTNER 2</div>
-          <div className="partner-placeholder">PARTNER 3</div>
-          <div className="partner-placeholder">PARTNER 4</div>
-        </div>
-      </section>
+      <SponsorsCarousel title="OUR SPONSORS" />
 
       {/* News Section */}
       <section className="news-section">
