@@ -82,9 +82,7 @@ const Contact = () => {
               </div>
               <h3 className="card-title">EMAIL</h3>
               <p className="card-description">
-                General: info@universalmetals.com<br />
-                Investors: investors@universalmetals.com<br />
-                Media: media@universalmetals.com
+                General:minersassociationofn25@gmail.com <br />
               </p>
             </div>
           </div>

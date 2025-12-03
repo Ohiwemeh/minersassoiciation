@@ -5,6 +5,9 @@ import './Navigation.css'
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [aboutOpen, setAboutOpen] = useState(false)
+  const [opsOpen, setOpsOpen] = useState(false)
+  const [eventsOpen, setEventsOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,21 +37,65 @@ const Navigation = () => {
         </button>
 
         <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-          <Link to="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>HOME</Link>
-          <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>ABOUT</Link>
-          <Link to="/operations" className="nav-link" onClick={() => setMobileMenuOpen(false)}>OPERATIONS</Link>
-          <Link to="/services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>SERVICES</Link>
+          <Link to="/" className="nav-link" onClick={() => { setMobileMenuOpen(false); setAboutOpen(false); setOpsOpen(false); setEventsOpen(false) }}>HOME</Link>
+          <div 
+            className={`nav-dropdown ${aboutOpen ? 'open' : ''}`}
+            onMouseEnter={() => setAboutOpen(true)}
+            onMouseLeave={() => setAboutOpen(false)}
+          >
+            <button 
+              className="nav-link dropdown-toggle"
+              onClick={() => setAboutOpen(!aboutOpen)}
+            >
+              ABOUT
+            </button>
+            <div className="dropdown-menu">
+              <Link to="/about" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setAboutOpen(false) }}>About Us</Link>
+              <Link to="/about/leadership" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setAboutOpen(false) }}>Partners & Owners</Link>
+            </div>
+          </div>
+          <div 
+            className={`nav-dropdown ${opsOpen ? 'open' : ''}`}
+            onMouseEnter={() => setOpsOpen(true)}
+            onMouseLeave={() => setOpsOpen(false)}
+          >
+            <button 
+              className="nav-link dropdown-toggle"
+              onClick={() => setOpsOpen(!opsOpen)}
+            >
+              OPERATIONS
+            </button>
+            <div className="dropdown-menu">
+              <Link to="/operations" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setOpsOpen(false) }}>Operations</Link>
+              <Link to="/services" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setOpsOpen(false) }}>Services</Link>
+            </div>
+          </div>
           {/* <Link to="/programs" className="nav-link" onClick={() => setMobileMenuOpen(false)}>PROGRAMS</Link> */}
           <Link to="/investors" className="nav-link" onClick={() => setMobileMenuOpen(false)}>INVESTORS</Link>
           <Link to="/membership" className="nav-link" onClick={() => setMobileMenuOpen(false)}>MEMBERSHIP</Link>
           <Link to="/news" className="nav-link" onClick={() => setMobileMenuOpen(false)}>NEWS</Link>
+          <div 
+            className={`nav-dropdown ${eventsOpen ? 'open' : ''}`}
+            onMouseEnter={() => setEventsOpen(true)}
+            onMouseLeave={() => setEventsOpen(false)}
+          >
+            <button 
+              className="nav-link dropdown-toggle"
+              onClick={() => setEventsOpen(!eventsOpen)}
+            >
+              EVENTS
+            </button>
+            <div className="dropdown-menu">
+              <Link to="/events/nigeria-mining-week-2025" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setEventsOpen(false) }}>Nigeria Mining Week 2025</Link>
+            </div>
+          </div>
           <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>CONTACT</Link>
-          <button className="search-button">
+          {/* <button className="search-button">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="11" cy="11" r="8"></circle>
               <path d="m21 21-4.35-4.35"></path>
             </svg>
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>

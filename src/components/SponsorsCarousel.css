@@ -32,7 +32,7 @@
   max-height: 60px;
   max-width: 160px;
   object-fit: contain;
-  filter: grayscale(100%);
+ 
 }
 
 @keyframes sponsors-scroll {

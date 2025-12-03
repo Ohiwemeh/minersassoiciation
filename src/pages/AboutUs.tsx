@@ -1,4 +1,5 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import { Link } from 'react-router'
 import '../pages/SharedStyles.css'
 
 const AboutUs = () => {
@@ -277,58 +278,12 @@ const AboutUs = () => {
 
       {/* Leadership Team */}
       <section className="content-section gray">
-        <div className="section-container">
+        <div className="section-container" style={{ textAlign: 'center' }}>
           <h2 className="section-title reveal">LEADERSHIP TEAM</h2>
           <p className="section-subtitle reveal">
-            Our experienced leadership team brings decades of mining expertise and strategic vision
+            Meet the people guiding our mission and strategy across the association.
           </p>
-          <div className="grid-3">
-            <div className="card reveal">
-              <div className="card-icon">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <h3 className="card-title">JOHN ROBERTS</h3>
-              <p className="card-description" style={{ marginBottom: '10px', color: '#d4af37', fontWeight: '600' }}>
-                Chief Executive Officer
-              </p>
-              <p className="card-description">
-                With over 25 years in the mining industry, John leads our strategic vision and global operations with a focus on sustainable growth.
-              </p>
-            </div>
-            <div className="card reveal">
-              <div className="card-icon">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <h3 className="card-title">SARAH CHEN</h3>
-              <p className="card-description" style={{ marginBottom: '10px', color: '#d4af37', fontWeight: '600' }}>
-                Chief Financial Officer
-              </p>
-              <p className="card-description">
-                Sarah brings extensive financial expertise, ensuring fiscal responsibility and driving investment strategies for long-term value creation.
-              </p>
-            </div>
-            <div className="card reveal">
-              <div className="card-icon">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <h3 className="card-title">MICHAEL OKONKWO</h3>
-              <p className="card-description" style={{ marginBottom: '10px', color: '#d4af37', fontWeight: '600' }}>
-                Chief Operations Officer
-              </p>
-              <p className="card-description">
-                Michael oversees all mining operations, implementing innovative technologies and best practices to maximize efficiency and safety.
-              </p>
-            </div>
-          </div>
+          <Link to="/about/leadership" className="btn btn-primary reveal">VIEW TEAM</Link>
         </div>
       </section>
 
