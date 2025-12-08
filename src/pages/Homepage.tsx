@@ -267,7 +267,15 @@ const Homepage = () => {
             <button className="initiative-button" onClick={() => navigate('/about')}>
               More on TGTP →
             </button>
+          </div>
+        </div>
+      </section>
 
+      {/* About Section */}
+      <section className="about-section">
+        <div className="about-content">
+          <div className="reveal">
+            <img
               src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397091/min_5_iisxwm.jpg" 
               alt="Mining operations" 
               className="about-image"
@@ -276,8 +284,8 @@ const Homepage = () => {
           <div className="about-text reveal">
             <h2>ABOUT US</h2>
             <p>
-                The Miners Association of Nigeria (MAN) is a National Industry Association whose diverse membership includes entities and individuals that are directly involved in mineral resources exploration and exploitation in Nigeria. MAN membership comprises of exploration, quarrying, and mining companies. It also encompasses services and Consultancy firms that relate to mining sector.
-              </p>
+              The Miners Association of Nigeria (MAN) is a National Industry Association whose diverse membership includes entities and individuals that are directly involved in mineral resources exploration and exploitation in Nigeria. MAN membership comprises of exploration, quarrying, and mining companies. It also encompasses services and Consultancy firms that relate to mining sector.
+            </p>
             <button className="about-button" onClick={() => navigate('/about')}>READ MORE</button>
           </div>
         </div>
