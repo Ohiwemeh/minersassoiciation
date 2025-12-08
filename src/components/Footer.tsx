@@ -11,10 +11,10 @@ const Footer = () => {
               <path d="M12 2L2 7l10 5 10-5-10-5z"/>
               <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
             </svg>
-            <h3>UNIVERSAL<br/>METALS</h3>
+            <h3>MINERS<br/>ASSOCIATION</h3>
           </div>
           <p className="footer-description">
-            Building business upon integrity and honesty since 1995.
+            Connecting Africa with the World's Best for 20+ Years.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ const Footer = () => {
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
-              <span>info@universalmetals.com</span>
+              <span>info@minersassociation.org</span>
             </li>
           </ul>
           <div className="footer-social">
@@ -87,7 +87,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 Universal Metals. All rights reserved.</p>
+        <p>&copy; 2025 Miners Association. All rights reserved.</p>
         <div className="footer-bottom-links">
           <Link to="/privacy">Privacy Policy</Link>
           <span>|</span>

@@ -12,6 +12,8 @@ import News from './pages/News'
 import Careers from './pages/Careers'
 import Membership from './pages/Membership'
 import Contact from './pages/Contact'
+import Privacy from './pages/Privacy'
+import Terms from './pages/Terms'
 import NotFound from './pages/NotFound'
 import EventNigeriaMiningWeek2025 from './pages/EventNigeriaMiningWeek2025'
 import './App.css'
@@ -34,7 +36,12 @@ function App() {
             <Route path="/careers" element={<Careers />} />
             <Route path="/membership" element={<Membership />} />
             <Route path="/contact" element={<Contact />} />
+
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
+
             <Route path="/events/nigeria-mining-week-2025" element={<EventNigeriaMiningWeek2025 />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

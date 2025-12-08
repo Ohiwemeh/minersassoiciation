@@ -39,6 +39,15 @@
   letter-spacing: 1px;
 }
 
+.hero-tagline {
+  font-size: 1.1rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 1rem;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
 .hero-button {
   background-color: transparent;
   border: 2px solid white;
@@ -139,6 +148,86 @@
   color: #d4af37;
   font-weight: bold;
   margin-right: 8px;
+}
+
+/* VUKA Intro */
+.vuka-intro {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.vuka-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #555;
+  font-weight: 400;
+}
+
+/* Influence Section */
+.influence-section {
+  padding: 100px 20px;
+  background-color: white;
+}
+
+.influence-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.influence-left,
+.influence-right {
+  padding: 20px;
+}
+
+.subsection-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 25px 0 15px;
+  color: #333;
+}
+
+.influence-description {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 0.98rem;
+}
+
+.cycle-description {
+  color: #666;
+  line-height: 1.8;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.cycle-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.cycle-list li {
+  padding: 12px 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.benefits-list li {
+  padding: 10px 0;
+  color: #2a7c3f;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /* Products Section */
@@ -271,6 +360,184 @@
   background-color: #333;
   color: white;
   transform: translateY(-2px);
+}
+
+/* Case Study Section */
+.case-study-section {
+  padding: 100px 20px;
+  background-color: #f9f9f9;
+}
+
+.case-study-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.case-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.case-study-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+  line-height: 1.3;
+}
+
+.case-study-client {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 4px solid #d4af37;
+}
+
+.case-study-client h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.case-study-client p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.case-study-section-content {
+  margin-bottom: 25px;
+}
+
+.case-study-section-content h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.case-study-section-content p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 0.98rem;
+}
+
+.case-study-quote {
+  background-color: #2a7c3f;
+  color: white;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.case-study-quote blockquote {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin: 0 0 15px 0;
+  quotes: """ """ "'" "'";
+}
+
+.case-study-quote blockquote::before {
+  content: open-quote;
+  font-size: 3rem;
+  line-height: 0;
+  margin-right: 8px;
+  vertical-align: -0.4em;
+}
+
+.quote-author {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: right;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Initiatives Section */
+.initiatives-section {
+  padding: 100px 20px;
+  background-color: white;
+}
+
+.initiatives-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.initiative-card {
+  background-color: #f9f9f9;
+  padding: 50px 40px;
+  border-left: 4px solid #d4af37;
+  transition: all 0.3s ease;
+}
+
+.initiative-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.initiative-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.initiative-description {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.initiative-list {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.initiative-list li {
+  padding: 10px 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.initiative-button {
+  background-color: transparent;
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  padding: 12px 30px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: none;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.initiative-button:hover {
+  background-color: #d4af37;
+  color: white;
+  transform: translateX(5px);
 }
 
 /* Map Section */
@@ -629,9 +896,28 @@
   .hero-subtitle {
     font-size: 1.5rem;
   }
+
+  .hero-tagline {
+    font-size: 0.95rem;
+  }
   
   .about-content {
     grid-template-columns: 1fr;
+  }
+
+  .influence-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .case-study-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .initiatives-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
   
   .services-grid,
