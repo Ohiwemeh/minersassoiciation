@@ -23,7 +23,7 @@ const Navigation = () => {
       <div className="nav-container">
         <Link to="/" className="nav-logo">
           <div className="logo-icon">
-           <img src='https://res.cloudinary.com/dufw6bsko/image/upload/v1763543111/slazzer-preview-5qofr_bel3he.png' width={60}/>
+           <img src='/miners-logo.png' alt="Miners Association Logo" width={60}/>
           </div>
         </Link>
         
@@ -86,7 +86,7 @@ const Navigation = () => {
               EVENTS
             </button>
             <div className="dropdown-menu">
-              <Link to="/events/nigeria-mining-week-2025" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setEventsOpen(false) }}>Nigeria Mining Week 2025</Link>
+              <a href="https://wearevuka.com/mining/nigeria-mining-week/" target="_blank" rel="noopener noreferrer" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setEventsOpen(false) }}>Nigeria Mining Week 2025</a>
             </div>
           </div>
           <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>CONTACT</Link>

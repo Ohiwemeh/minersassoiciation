@@ -7,11 +7,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <div className="footer-logo">
-            <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-              <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
-            </svg>
-            <h3>MINERS<br/>ASSOCIATION</h3>
+            <img src="/miners-logo.png" alt="Miners Association Logo" width="80" />
           </div>
           <p className="footer-description">
             Connecting Africa with the World's Best for 20+ Years.
