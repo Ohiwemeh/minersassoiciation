@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router'
+import LocationsMap from '../components/LocationMap'
+import SponsorsCarousel from '../components/SponsorsCarousel'
 import './Homepage.css'
-import img from '../assets/landing.jpg'
+
 
 const Homepage = () => {
   const navigate = useNavigate()
@@ -53,7 +55,7 @@ const Homepage = () => {
   return (
     <div className="homepage">
       {/* Hero Section */}
-     <section className="hero-section parallax" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${img})` }} >
+     <section className="hero-section parallax" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/landing_onfdtb.jpg)` }} >
         <div className="hero-content">
           <h1 className="hero-title">Connecting Africa with the World's Best, to Influence Sustainable* Progress</h1>
           <p className="hero-tagline">*social flourishing, just economic prosperity, resource abundance</p>
@@ -194,6 +196,7 @@ const Homepage = () => {
         <div className="case-study-content">
           <div className="case-study-image reveal">
             <img 
+
               src="/min (5).jpg" 
               alt="DRC Mining Week" 
               className="case-image"
@@ -264,47 +267,27 @@ const Homepage = () => {
             <button className="initiative-button" onClick={() => navigate('/about')}>
               More on TGTP →
             </button>
+
+              src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397091/min_5_iisxwm.jpg" 
+              alt="Mining operations" 
+              className="about-image"
+            />
+          </div>
+          <div className="about-text reveal">
+            <h2>ABOUT US</h2>
+            <p>
+                The Miners Association of Nigeria (MAN) is a National Industry Association whose diverse membership includes entities and individuals that are directly involved in mineral resources exploration and exploitation in Nigeria. MAN membership comprises of exploration, quarrying, and mining companies. It also encompasses services and Consultancy firms that relate to mining sector.
+              </p>
+            <button className="about-button" onClick={() => navigate('/about')}>READ MORE</button>
           </div>
         </div>
       </section>
 
       {/* Map Section */}
-      <section className="map-section">
-        <h2 className="section-title reveal">OUR LOCATIONS</h2>
-        <div className="map-container reveal" style={{ backgroundImage: 'url(/min (6).jpg)' }}>
-          <div className="map-marker" style={{ top: '30%', left: '20%' }} title="North America">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-            </svg>
-          </div>
-          <div className="map-marker" style={{ top: '50%', left: '45%' }} title="Africa">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-            </svg>
-          </div>
-          <div className="map-marker" style={{ top: '40%', left: '70%' }} title="Asia">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-            </svg>
-          </div>
-          <div className="map-marker" style={{ top: '70%', left: '80%' }} title="Australia">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-            </svg>
-          </div>
-        </div>
-      </section>
+      <LocationsMap />
 
       {/* Partners Section */}
-      <section className="partners-section">
-        <h2 className="section-title reveal">OUR PARTNERS</h2>
-        <div className="partners-grid reveal">
-          <div className="partner-placeholder">PARTNER 1</div>
-          <div className="partner-placeholder">PARTNER 2</div>
-          <div className="partner-placeholder">PARTNER 3</div>
-          <div className="partner-placeholder">PARTNER 4</div>
-        </div>
-      </section>
+      <SponsorsCarousel title="OUR SPONSORS" />
 
       {/* News Section */}
       <section className="news-section">

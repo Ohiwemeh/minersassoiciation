@@ -57,9 +57,8 @@ const Contact = () => {
               </div>
               <h3 className="card-title">HEAD OFFICE</h3>
               <p className="card-description">
-                123 Mining Street<br />
-                New York, NY 10001<br />
-                United States
+              MINERS ASSOIATION OF NIGERIA NATIONAL HEADQUARTERS, 1t floor NEXIM House, Plot 975 Cadastral Zone AO, Central Business District, Abuja, Nigeria. 
+
               </p>
             </div>
             <div className="card reveal">
@@ -70,9 +69,8 @@ const Contact = () => {
               </div>
               <h3 className="card-title">PHONE</h3>
               <p className="card-description">
-                Main: +1 (212) 555-0100<br />
-                Toll-Free: 1-800-MINING<br />
-                Fax: +1 (212) 555-0101
+                Main: +234(0)7089827055<br />
+                +234 (0)8034092599
               </p>
             </div>
             <div className="card reveal">
@@ -84,9 +82,7 @@ const Contact = () => {
               </div>
               <h3 className="card-title">EMAIL</h3>
               <p className="card-description">
-                General: info@universalmetals.com<br />
-                Investors: investors@universalmetals.com<br />
-                Media: media@universalmetals.com
+                General:minersassociationofn25@gmail.com <br />
               </p>
             </div>
           </div>
@@ -210,7 +206,7 @@ const Contact = () => {
       </section>
 
       {/* Office Locations */}
-      <section className="content-section">
+      {/* <section className="content-section">
         <div className="section-container">
           <h2 className="section-title reveal">GLOBAL OFFICES</h2>
           <div className="grid-4">
@@ -248,7 +244,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Business Hours */}
       <section className="content-section dark">

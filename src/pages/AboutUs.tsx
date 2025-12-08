@@ -1,4 +1,5 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import { Link } from 'react-router'
 import '../pages/SharedStyles.css'
 
 const AboutUs = () => {
@@ -7,9 +8,9 @@ const AboutUs = () => {
   return (
     <div className="page-container">
       {/* Hero Section */}
-      <section 
-        className="page-hero" 
-        style={{ backgroundImage: 'url(/min%20(5).jpg)' }}
+      <section
+        className="page-hero"
+        style={{ backgroundImage: 'url(https://res.cloudinary.com/dufw6bsko/image/upload/v1763397091/min_5_iisxwm.jpg)' }}
       >
         <div className="page-hero-content">
           <h1 className="page-hero-title">ABOUT MINERS ASSOCIATION</h1>
@@ -25,9 +26,9 @@ const AboutUs = () => {
           <h2 className="section-title reveal">WHO WE ARE</h2>
           <div className="grid-2">
             <div className="reveal-left">
-              <img 
-                src="/min (2).jpg" 
-                alt="Miners Association Events" 
+              <img
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397106/min_2_kbhgz7.jpg"
+                alt="Mining operations"
                 className="feature-image"
                 style={{ height: '400px' }}
               />
@@ -35,14 +36,126 @@ const AboutUs = () => {
             <div className="text-content reveal-right">
               <h3>Connecting Africa's Business Leaders</h3>
               <p>
-                Miners Association is Africa's premier platform for business connection and influence. For over 20 years, we have been connecting people and organisations to information and each other through signature in-person and digital environments across the African continent.
+                The Miners Association of Nigeria (MAN) is a National Industry Association whose diverse membership includes entities and individuals that are directly involved in mineral resources exploration and exploitation in Nigeria. MAN membership comprises of exploration, quarrying, and mining companies. It also encompasses services and Consultancy firms that relate to mining sector.
               </p>
               <p>
-                We specialize in creating the conditions for extraordinary change, supporting Africa to achieve its highest potential. Our platforms span critical sectors including Mining, Energy, Smart Mobility, and Retail, bringing together industry leaders, innovators, and decision-makers.
-              </p>
+                At inception in 1944, the Association was called the Association of African Miners and it was meant to protect the interest of the African mine workers. Later in its history after the independence, it transmuted into an association of Nigerian Mine Owners which late changed its name to Miners Association of Nigeria in 1993. It is the umbrella body of all other trade and industry. </p>
               <p>
-                Through our trust-based influence model, we help businesses build lasting relationships, gain market visibility, and create meaningful opportunities. Our integrated approach combines live events, digital media, industry news, and year-round engagement to deliver sustained value to our clients.
+                MAN is a very responsible Association of mine owners which include Artisanal and Small-Scale Miners, Quarry operators, Traders of Mining products, etc. The Association has been collaborating with the Ministry of Solid Minerals Development and its agencies to achieve every success in the ongoing reform initiative of the Government agencies and international Community through their Embassies, on behalf of the indigenous operators (members) so as to harness the mineral potentials of the country.
+
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Organizational Structure */}
+      <section className="content-section gray">
+        <div className="section-container">
+          <h2 className="section-title reveal">ORGANIZATIONAL STRUCTURE</h2>
+          <p className="section-subtitle reveal">
+            A well-structured association designed to capture all categories of miners in Nigeria
+          </p>
+          <div className="grid-2">
+            <div className="card reveal" style={{ padding: '30px' }}>
+              <h3 className="card-title" style={{ marginBottom: '20px', color: '#d4af37' }}>COMPREHENSIVE REPRESENTATION</h3>
+              <p style={{ marginBottom: '20px', lineHeight: '1.6' }}>
+                Miners Association of Nigeria (MAN) is the only business Association in the Mining Industry that is well structured to capture all categories of Miners in Nigeria:
+              </p>
+              <ul style={{ listStyle: 'none', padding: 0, marginBottom: '20px' }}>
+                <li style={{ 
+                  padding: '10px 0', 
+                  borderBottom: '1px solid #eee',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px'
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#d4af37">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  Gemstones Miners and Marketers Association of Nigeria
+                </li>
+                <li style={{ 
+                  padding: '10px 0', 
+                  borderBottom: '1px solid #eee',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px'
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#d4af37">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  Dimension Stones Association of Nigeria
+                </li>
+                <li style={{ 
+                  padding: '10px 0', 
+                  borderBottom: '1px solid #eee',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px'
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#d4af37">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  Association of Miners and Processors of Barite
+                </li>
+                <li style={{ 
+                  padding: '10px 0', 
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px'
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#d4af37">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  And many other specialized mining associations
+                </li>
+              </ul>
+            </div>
+            <div className="card reveal" style={{ padding: '30px' }}>
+              <h3 className="card-title" style={{ marginBottom: '20px', color: '#d4af37' }}>GOVERNANCE STRUCTURE</h3>
+              <div style={{ marginBottom: '25px' }}>
+                <div style={{ 
+                  backgroundColor: 'rgba(212, 175, 55, 0.1)', 
+                  border: '2px solid #d4af37', 
+                  borderRadius: '8px', 
+                  padding: '20px',
+                  marginBottom: '20px'
+                }}>
+                  <h4 style={{ color: '#d4af37', marginBottom: '10px', fontSize: '1.1rem' }}>NATIONAL LEVEL</h4>
+                  <p style={{ margin: 0, fontWeight: '600', fontSize: '1.2rem', color: '#2c3e50' }}>
+                    9 Elected Executive Officers
+                  </p>
+                  <p style={{ margin: '5px 0 0 0', color: '#666' }}>
+                    Leading the association's strategic direction and national initiatives
+                  </p>
+                </div>
+                <div style={{ 
+                  backgroundColor: '#f8f9fa', 
+                  border: '2px solid #e9ecef', 
+                  borderRadius: '8px', 
+                  padding: '20px'
+                }}>
+                  <h4 style={{ color: '#2c3e50', marginBottom: '10px', fontSize: '1.1rem' }}>STATE CHAPTERS</h4>
+                  <p style={{ margin: 0, fontWeight: '600', fontSize: '1.2rem', color: '#2c3e50' }}>
+                    State Executive Committees
+                  </p>
+                  <p style={{ margin: '5px 0 0 0', color: '#666' }}>
+                    Each of the 36 states plus FCT-Abuja has its own executive committee managing local operations and member interests
+                  </p>
+                </div>
+              </div>
+              <div style={{ 
+                textAlign: 'center', 
+                padding: '15px',
+                backgroundColor: 'rgba(212, 175, 55, 0.05)',
+                borderRadius: '6px',
+                border: '1px solid #d4af37'
+              }}>
+                <p style={{ margin: 0, fontSize: '1rem', fontStyle: 'italic' }}>
+                  "All member associations are integral parts of MAN, creating a unified voice for Nigeria's mining industry"
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -62,7 +175,7 @@ const AboutUs = () => {
               </div>
               <h3 className="card-title">OUR MISSION</h3>
               <p className="card-description">
-                To connect Africa's business leaders with global opportunities through trusted platforms that facilitate meaningful dialogue, knowledge sharing, and collaboration. We create environments where innovation thrives, relationships deepen, and sustainable progress becomes possible across key industries driving Africa's economic transformation.
+               To positively engage the Governments, there agencies and other critical stakeholders to provide enabling environment for mining activities to thrive.
               </p>
             </div>
             <div className="card dark reveal">
@@ -74,7 +187,7 @@ const AboutUs = () => {
               </div>
               <h3 className="card-title">OUR VISION</h3>
               <p className="card-description">
-                To be Africa's most influential business platform, recognized for catalyzing sustainable progress through authentic connections. We envision an Africa where businesses thrive through collaboration, where innovation is accessible, and where every connection creates opportunities for social flourishing, economic prosperity, and resource abundance.
+                To move mining activities to greater heights in which operators would be empowered to mine with ease for the betterment of mining industry, wealth creation, and employment generation in Nigeria.
               </p>
             </div>
           </div>
@@ -165,58 +278,12 @@ const AboutUs = () => {
 
       {/* Leadership Team */}
       <section className="content-section gray">
-        <div className="section-container">
+        <div className="section-container" style={{ textAlign: 'center' }}>
           <h2 className="section-title reveal">LEADERSHIP TEAM</h2>
           <p className="section-subtitle reveal">
-            Our experienced leadership team brings decades of mining expertise and strategic vision
+            Meet the people guiding our mission and strategy across the association.
           </p>
-          <div className="grid-3">
-            <div className="card reveal">
-              <div className="card-icon">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <h3 className="card-title">JOHN ROBERTS</h3>
-              <p className="card-description" style={{ marginBottom: '10px', color: '#d4af37', fontWeight: '600' }}>
-                Chief Executive Officer
-              </p>
-              <p className="card-description">
-                With over 25 years in the mining industry, John leads our strategic vision and global operations with a focus on sustainable growth.
-              </p>
-            </div>
-            <div className="card reveal">
-              <div className="card-icon">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <h3 className="card-title">SARAH CHEN</h3>
-              <p className="card-description" style={{ marginBottom: '10px', color: '#d4af37', fontWeight: '600' }}>
-                Chief Financial Officer
-              </p>
-              <p className="card-description">
-                Sarah brings extensive financial expertise, ensuring fiscal responsibility and driving investment strategies for long-term value creation.
-              </p>
-            </div>
-            <div className="card reveal">
-              <div className="card-icon">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <h3 className="card-title">MICHAEL OKONKWO</h3>
-              <p className="card-description" style={{ marginBottom: '10px', color: '#d4af37', fontWeight: '600' }}>
-                Chief Operations Officer
-              </p>
-              <p className="card-description">
-                Michael oversees all mining operations, implementing innovative technologies and best practices to maximize efficiency and safety.
-              </p>
-            </div>
-          </div>
+          <Link to="/about/leadership" className="btn btn-primary reveal">VIEW TEAM</Link>
         </div>
       </section>
 

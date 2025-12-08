@@ -5,6 +5,9 @@ import './Navigation.css'
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [aboutOpen, setAboutOpen] = useState(false)
+  const [opsOpen, setOpsOpen] = useState(false)
+  const [eventsOpen, setEventsOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,10 +23,7 @@ const Navigation = () => {
       <div className="nav-container">
         <Link to="/" className="nav-logo">
           <div className="logo-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-              <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
-            </svg>
+           <img src='https://res.cloudinary.com/dufw6bsko/image/upload/v1763543111/slazzer-preview-5qofr_bel3he.png' width={60}/>
           </div>
         </Link>
         
@@ -37,19 +37,65 @@ const Navigation = () => {
         </button>
 
         <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-          <Link to="/" className="nav-link">HOME</Link>
-          <Link to="/about" className="nav-link">ABOUT</Link>
-          <Link to="/operations" className="nav-link">OPERATIONS</Link>
-          <Link to="/services" className="nav-link">SERVICES</Link>
-          <Link to="/investors" className="nav-link">INVESTORS</Link>
-          <Link to="/news" className="nav-link">NEWS</Link>
-          <Link to="/contact" className="nav-link">CONTACT</Link>
-          <button className="search-button">
+          <Link to="/" className="nav-link" onClick={() => { setMobileMenuOpen(false); setAboutOpen(false); setOpsOpen(false); setEventsOpen(false) }}>HOME</Link>
+          <div 
+            className={`nav-dropdown ${aboutOpen ? 'open' : ''}`}
+            onMouseEnter={() => setAboutOpen(true)}
+            onMouseLeave={() => setAboutOpen(false)}
+          >
+            <button 
+              className="nav-link dropdown-toggle"
+              onClick={() => setAboutOpen(!aboutOpen)}
+            >
+              ABOUT
+            </button>
+            <div className="dropdown-menu">
+              <Link to="/about" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setAboutOpen(false) }}>About Us</Link>
+              <Link to="/about/leadership" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setAboutOpen(false) }}>Partners & Owners</Link>
+            </div>
+          </div>
+          <div 
+            className={`nav-dropdown ${opsOpen ? 'open' : ''}`}
+            onMouseEnter={() => setOpsOpen(true)}
+            onMouseLeave={() => setOpsOpen(false)}
+          >
+            <button 
+              className="nav-link dropdown-toggle"
+              onClick={() => setOpsOpen(!opsOpen)}
+            >
+              OPERATIONS
+            </button>
+            <div className="dropdown-menu">
+              <Link to="/operations" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setOpsOpen(false) }}>Operations</Link>
+              <Link to="/services" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setOpsOpen(false) }}>Services</Link>
+            </div>
+          </div>
+          {/* <Link to="/programs" className="nav-link" onClick={() => setMobileMenuOpen(false)}>PROGRAMS</Link> */}
+          <Link to="/investors" className="nav-link" onClick={() => setMobileMenuOpen(false)}>INVESTORS</Link>
+          <Link to="/membership" className="nav-link" onClick={() => setMobileMenuOpen(false)}>MEMBERSHIP</Link>
+          <Link to="/news" className="nav-link" onClick={() => setMobileMenuOpen(false)}>NEWS</Link>
+          <div 
+            className={`nav-dropdown ${eventsOpen ? 'open' : ''}`}
+            onMouseEnter={() => setEventsOpen(true)}
+            onMouseLeave={() => setEventsOpen(false)}
+          >
+            <button 
+              className="nav-link dropdown-toggle"
+              onClick={() => setEventsOpen(!eventsOpen)}
+            >
+              EVENTS
+            </button>
+            <div className="dropdown-menu">
+              <Link to="/events/nigeria-mining-week-2025" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setEventsOpen(false) }}>Nigeria Mining Week 2025</Link>
+            </div>
+          </div>
+          <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>CONTACT</Link>
+          {/* <button className="search-button">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="11" cy="11" r="8"></circle>
               <path d="m21 21-4.35-4.35"></path>
             </svg>
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>

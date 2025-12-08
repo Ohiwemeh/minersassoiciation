@@ -1,15 +1,26 @@
+import { Link } from 'react-router'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import '../pages/SharedStyles.css'
 
 const Operations = () => {
   useScrollReveal()
 
+  const mineralTypes = [
+    'Barite', 'Gypsum', 'Talc', 'Diatomite', 'Silica Sand', 'Bentonite', 'Limestone', 
+    'Mica', 'Phosphate Rock', 'Clay', 'Marble', 'Magnesite', 'Feldspar', 'Kyanite', 
+    'Flourite', 'Rutile', 'Wolframite', 'Bismuth', 'Argentite', 'Molybdenite', 
+    'Ililmenite', 'Lithium', 'Sillimanite', 'Cassiterite', 'Gold', 'Coal', 'Bitumen', 
+    'Gemstones', 'Chromite', 'Sperrylite', 'Uraninite', 'Galena', 'Sphalerite', 
+    'Manganese', 'Tantalite', 'Columbite', 'Iron Ore', 'Vanadinite', 'Cobaltite', 
+    'Chalcopyrite', 'Rare Earth Metal', 'Pentlandite', 'Stibnite'
+  ]
+
   return (
     <div className="page-container">
       {/* Hero Section */}
       <section 
         className="page-hero" 
-        style={{ backgroundImage: 'url(/min%20(3).jpg)' }}
+        style={{ backgroundImage: 'url(https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_3_q5bn0x.jpg)' }}
       >
         <div className="page-hero-content">
           <h1 className="page-hero-title">OPERATIONS & PROJECTS</h1>
@@ -73,7 +84,7 @@ const Operations = () => {
           <div className="grid-2" style={{ gap: '40px' }}>
             <div className="card reveal">
               <img 
-                src="/min (1).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/landing_onfdtb.jpg" 
                 alt="Golden Ridge Mine" 
                 style={{ width: '100%', height: '250px', objectFit: 'cover', marginBottom: '20px' }}
               />
@@ -102,7 +113,7 @@ const Operations = () => {
 
             <div className="card reveal">
               <img 
-                src="/min (4).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_4_l3ijmr.jpg" 
                 alt="Silverstone Complex" 
                 style={{ width: '100%', height: '250px', objectFit: 'cover', marginBottom: '20px' }}
               />
@@ -131,7 +142,7 @@ const Operations = () => {
 
             <div className="card reveal">
               <img 
-                src="/min (6).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_6_tyd5ov.jpg" 
                 alt="Copper Valley Project" 
                 style={{ width: '100%', height: '250px', objectFit: 'cover', marginBottom: '20px' }}
               />
@@ -160,7 +171,7 @@ const Operations = () => {
 
             <div className="card reveal">
               <img 
-                src="/min (2).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397106/min_2_kbhgz7.jpg" 
                 alt="Diamond Peak Mine" 
                 style={{ width: '100%', height: '250px', objectFit: 'cover', marginBottom: '20px' }}
               />
@@ -265,6 +276,53 @@ const Operations = () => {
         </div>
       </section>
 
+      {/* Mineral Types in Nigeria */}
+      <section className="content-section gray">
+        <div className="section-container">
+          <h2 className="section-title reveal">MINERAL TYPES IN NIGERIA</h2>
+          <p className="section-subtitle reveal">
+            Nigeria is endowed with over 44 different mineral types occurring in more than 500 locations across the country
+          </p>
+          <div className="card reveal" style={{ padding: '40px' }}>
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', 
+              gap: '12px'
+            }}>
+              {mineralTypes.map((mineral, index) => (
+                <div key={index} style={{ 
+                  backgroundColor: '#fff',
+                  padding: '12px 16px',
+                  borderRadius: '6px',
+                  border: '2px solid #e9ecef',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer',
+                  textAlign: 'center',
+                  fontWeight: '500',
+                  color: '#2c3e50',
+                  fontSize: '0.9rem'
+                }}>
+                  {mineral}
+                </div>
+              ))}
+            </div>
+            <div style={{ 
+              textAlign: 'center', 
+              marginTop: '30px',
+              padding: '20px',
+              backgroundColor: 'rgba(212, 175, 55, 0.1)',
+              borderRadius: '8px',
+              border: '1px solid #d4af37'
+            }}>
+              <h4 style={{ color: '#d4af37', marginBottom: '10px' }}>RICH MINERAL ENDOWMENT</h4>
+              <p style={{ margin: 0, fontSize: '1.1rem' }}>
+                With <strong>44+ mineral types</strong> found across <strong>500+ locations</strong>, Nigeria possesses one of the most diverse mineral portfolios in Africa, offering immense opportunities for mining investment and development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Exploration Projects */}
       <section className="content-section gray">
         <div className="section-container">
@@ -282,13 +340,13 @@ const Operations = () => {
                 <li>Focus on tier-1 jurisdictions with proven mineral potential</li>
                 <li>Comprehensive environmental and social impact assessments</li>
               </ul>
-              <button className="btn btn-primary" style={{ marginTop: '20px' }}>
+              <Link to="/" className="btn btn-primary border-none border-r-8 overflow-hidden " style={{ marginTop: '20px' }}>
                 VIEW EXPLORATION PORTFOLIO
-              </button>
+              </Link>
             </div>
             <div className="reveal-right">
               <img 
-                src="/min (5).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397091/min_5_iisxwm.jpg" 
                 alt="Exploration activities" 
                 className="feature-image"
                 style={{ height: '450px' }}
