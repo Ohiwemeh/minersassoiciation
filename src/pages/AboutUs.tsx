@@ -12,9 +12,9 @@ const AboutUs = () => {
         style={{ backgroundImage: 'url(/min%20(5).jpg)' }}
       >
         <div className="page-hero-content">
-          <h1 className="page-hero-title">ABOUT US</h1>
+          <h1 className="page-hero-title">ABOUT MINERS ASSOCIATION</h1>
           <p className="page-hero-subtitle">
-            Building business upon integrity and honesty since 1995
+            Connecting Africa with the World's Best for 20+ Years
           </p>
         </div>
       </section>
@@ -27,21 +27,21 @@ const AboutUs = () => {
             <div className="reveal-left">
               <img 
                 src="/min (2).jpg" 
-                alt="Mining operations" 
+                alt="Miners Association Events" 
                 className="feature-image"
                 style={{ height: '400px' }}
               />
             </div>
             <div className="text-content reveal-right">
-              <h3>Leading the Mining Industry</h3>
+              <h3>Connecting Africa's Business Leaders</h3>
               <p>
-                Universal Metals is a leading mining company with a proven track record of successful exploration, development, and operation of mineral properties. Founded on principles of integrity and honesty, we have built a reputation for excellence in the mining industry.
+                Miners Association is Africa's premier platform for business connection and influence. For over 20 years, we have been connecting people and organisations to information and each other through signature in-person and digital environments across the African continent.
               </p>
               <p>
-                Our team of experienced professionals brings together expertise in geology, mining engineering, environmental science, and business management. We are committed to creating value for our shareholders while maintaining the highest standards of corporate responsibility.
+                We specialize in creating the conditions for extraordinary change, supporting Africa to achieve its highest potential. Our platforms span critical sectors including Mining, Energy, Smart Mobility, and Retail, bringing together industry leaders, innovators, and decision-makers.
               </p>
               <p>
-                With operations spanning multiple continents, we have established ourselves as a trusted partner in the global minerals market. Our focus on innovation, sustainability, and community engagement sets us apart in the industry.
+                Through our trust-based influence model, we help businesses build lasting relationships, gain market visibility, and create meaningful opportunities. Our integrated approach combines live events, digital media, industry news, and year-round engagement to deliver sustained value to our clients.
               </p>
             </div>
           </div>
@@ -62,7 +62,7 @@ const AboutUs = () => {
               </div>
               <h3 className="card-title">OUR MISSION</h3>
               <p className="card-description">
-                To responsibly extract and process mineral resources while creating sustainable value for our stakeholders, protecting the environment, and contributing positively to the communities where we operate. We strive to be the industry leader in safety, innovation, and operational excellence.
+                To connect Africa's business leaders with global opportunities through trusted platforms that facilitate meaningful dialogue, knowledge sharing, and collaboration. We create environments where innovation thrives, relationships deepen, and sustainable progress becomes possible across key industries driving Africa's economic transformation.
               </p>
             </div>
             <div className="card dark reveal">
@@ -74,7 +74,7 @@ const AboutUs = () => {
               </div>
               <h3 className="card-title">OUR VISION</h3>
               <p className="card-description">
-                To be recognized globally as the most trusted and innovative mining company, setting new standards for sustainable resource development. We envision a future where mining operations coexist harmoniously with nature and local communities, powered by cutting-edge technology and ethical practices.
+                To be Africa's most influential business platform, recognized for catalyzing sustainable progress through authentic connections. We envision an Africa where businesses thrive through collaboration, where innovation is accessible, and where every connection creates opportunities for social flourishing, economic prosperity, and resource abundance.
               </p>
             </div>
           </div>
@@ -92,21 +92,22 @@ const AboutUs = () => {
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                 </svg>
               </div>
-              <h3 className="card-title">INTEGRITY</h3>
+              <h3 className="card-title">TRUST</h3>
               <p className="card-description">
-                We conduct our business with the highest ethical standards, transparency, and accountability in all our dealings.
+                We build lasting relationships through authentic engagement, transparency, and consistent delivery on our promises to clients and partners.
               </p>
             </div>
             <div className="card reveal">
               <div className="card-icon">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
                 </svg>
               </div>
-              <h3 className="card-title">SAFETY</h3>
+              <h3 className="card-title">CONNECTION</h3>
               <p className="card-description">
-                The safety and well-being of our employees, contractors, and communities is our top priority in everything we do.
+                We create meaningful opportunities for businesses to connect, collaborate, and grow together across Africa's most dynamic industries.
               </p>
             </div>
             <div className="card reveal">
@@ -118,20 +119,19 @@ const AboutUs = () => {
               </div>
               <h3 className="card-title">EXCELLENCE</h3>
               <p className="card-description">
-                We pursue operational excellence through continuous improvement, innovation, and best-in-class practices.
+                We deliver world-class events, media, and platforms that set the standard for business engagement and thought leadership in Africa.
               </p>
             </div>
             <div className="card reveal">
               <div className="card-icon">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
                 </svg>
               </div>
-              <h3 className="card-title">RESPECT</h3>
+              <h3 className="card-title">IMPACT</h3>
               <p className="card-description">
-                We treat all people with dignity and respect, valuing diversity and fostering inclusive work environments.
+                We are committed to driving sustainable progress and creating lasting value for Africa's business community and the continent's future.
               </p>
             </div>
           </div>
@@ -144,20 +144,20 @@ const AboutUs = () => {
           <h2 className="section-title reveal">BY THE NUMBERS</h2>
           <div className="stats-container reveal">
             <div className="stat-item">
-              <div className="stat-number">30+</div>
-              <div className="stat-label">Years of Experience</div>
+              <div className="stat-number">20+</div>
+              <div className="stat-label">Years Connecting Africa</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">15</div>
-              <div className="stat-label">Active Mining Sites</div>
+              <div className="stat-number">88,000+</div>
+              <div className="stat-label">Industry Contacts</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">2,500+</div>
-              <div className="stat-label">Employees Worldwide</div>
+              <div className="stat-number">50+</div>
+              <div className="stat-label">Annual Events</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">25+</div>
-              <div className="stat-label">Countries Served</div>
+              <div className="stat-number">4</div>
+              <div className="stat-label">Key Industry Sectors</div>
             </div>
           </div>
         </div>

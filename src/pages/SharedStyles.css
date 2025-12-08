@@ -523,3 +523,61 @@
 .border-accent-gold {
   border-color: #d4af37;
 }
+
+/* Privacy and Terms Specific Styles */
+.last-updated {
+  font-size: 0.9rem;
+  color: #999;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.contact-box {
+  background-color: #f9f9f9;
+  border-left: 4px solid #d4af37;
+  padding: 25px;
+  margin: 25px 0;
+}
+
+.contact-box p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.contact-box strong {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.text-content h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 40px 0 20px;
+  color: #333;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 10px;
+}
+
+.text-content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 30px 0 15px;
+  color: #444;
+}
+
+.text-content ul {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+.text-content ul li {
+  margin: 10px 0;
+  line-height: 1.8;
+  color: #666;
+}
+
+.text-content p {
+  margin: 15px 0;
+  line-height: 1.8;
+  color: #666;
+}
