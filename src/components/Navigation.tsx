@@ -86,7 +86,7 @@ const Navigation = () => {
               EVENTS
             </button>
             <div className="dropdown-menu">
-              <Link to="/events/nigeria-mining-week-2025" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setEventsOpen(false) }}>Nigeria Mining Week 2025</Link>
+              <a href="https://wearevuka.com/mining/nigeria-mining-week/" target="_blank" rel="noopener noreferrer" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setEventsOpen(false) }}>Nigeria Mining Week 2025</a>
             </div>
           </div>
           <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>CONTACT</Link>
