@@ -46,7 +46,7 @@ const Membership = () => {
       {/* Hero Section */}
       <section 
         className="page-hero" 
-        style={{ backgroundImage: 'url(/min (2).jpg)' }}
+        style={{ backgroundImage: 'url(https://res.cloudinary.com/dufw6bsko/image/upload/v1763397106/min_2_kbhgz7.jpg)' }}
       >
         <div className="page-hero-content">
           <h1 className="page-hero-title">MEMBERSHIP</h1>
@@ -163,7 +163,7 @@ const Membership = () => {
             </div>
             <div className="reveal">
               <img 
-                src="/min (5).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397091/min_5_iisxwm.jpg" 
                 alt="Mining operations" 
                 className="feature-image"
                 style={{ height: '400px', width: '100%', objectFit: 'cover' }}

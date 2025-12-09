@@ -9,7 +9,7 @@ const Investors = () => {
       {/* Hero Section */}
       <section 
         className="page-hero" 
-        style={{ backgroundImage: 'url(/min%20(6).jpg)' }}
+        style={{ backgroundImage: 'url(https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_6_tyd5ov.jpg)' }}
       >
         <div className="page-hero-content">
           <h1 className="page-hero-title">INVESTOR RELATIONS</h1>
@@ -280,7 +280,7 @@ const Investors = () => {
             </div>
             <div className="reveal-right">
               <img 
-                src="/min (1).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/landing_onfdtb.jpg" 
                 alt="Corporate governance" 
                 className="feature-image"
                 style={{ height: '400px' }}

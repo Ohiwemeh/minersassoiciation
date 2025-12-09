@@ -33,7 +33,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section 
         className="page-hero" 
-        style={{ backgroundImage: 'url(/min%20(3).jpg)' }}
+        style={{ backgroundImage: 'url(https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_3_q5bn0x.jpg)' }}
       >
         <div className="page-hero-content">
           <h1 className="page-hero-title">CONTACT US</h1>

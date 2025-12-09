@@ -11,7 +11,7 @@ const News = () => {
       date: 'NOVEMBER 10, 2025',
       title: 'THE MINING INDUSTRY: FROM A GEOLOGICAL AND BUSINESS PERSPECTIVE',
       excerpt: 'Exploring the intersection of geological science and business strategy in modern mining operations. Learn how Universal Metals approaches mineral exploration with both technical expertise and commercial acumen.',
-      image: '/min (1).jpg',
+      image: 'https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/landing_onfdtb.jpg',
       category: 'Industry Insights'
     },
     {
@@ -19,7 +19,7 @@ const News = () => {
       date: 'NOVEMBER 5, 2025',
       title: 'GOING ELECTRONIC: FROM PAPER TO DIGITAL MINE PLANS',
       excerpt: 'Discover how digital transformation is revolutionizing mine planning and operations. Universal Metals leads the way in adopting cutting-edge technology for improved efficiency and safety.',
-      image: '/min (3).jpg',
+      image: 'https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_3_q5bn0x.jpg',
       category: 'Technology'
     },
     {
@@ -27,7 +27,7 @@ const News = () => {
       date: 'OCTOBER 28, 2025',
       title: 'JOHN ROBERTS: HOW WE\'LL GET TO THE MOON AGAIN',
       excerpt: 'An exclusive interview with our CEO about the future of mining technology and sustainable practices. Learn about our vision for the next generation of mineral extraction and processing.',
-      image: '/min (4).jpg',
+      image: 'https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_4_l3ijmr.jpg',
       category: 'Leadership'
     },
     {
@@ -35,7 +35,7 @@ const News = () => {
       date: 'OCTOBER 15, 2025',
       title: 'UNIVERSAL METALS ACHIEVES RECORD PRODUCTION AT GOLDEN RIDGE',
       excerpt: 'Our flagship gold mine sets new production records while maintaining industry-leading safety standards. Q3 results exceed expectations with 68,000 ounces produced.',
-      image: '/min (2).jpg',
+      image: 'https://res.cloudinary.com/dufw6bsko/image/upload/v1763397106/min_2_kbhgz7.jpg',
       category: 'Operations'
     },
     {
@@ -43,7 +43,7 @@ const News = () => {
       date: 'SEPTEMBER 22, 2025',
       title: 'SUSTAINABILITY MILESTONE: 35% REDUCTION IN CARBON EMISSIONS',
       excerpt: 'Universal Metals announces significant progress toward net-zero goals. New renewable energy installations and efficiency improvements drive emissions reduction.',
-      image: '/min (5).jpg',
+      image: 'https://res.cloudinary.com/dufw6bsko/image/upload/v1763397091/min_5_iisxwm.jpg',
       category: 'Sustainability'
     },
     {
@@ -51,7 +51,7 @@ const News = () => {
       date: 'SEPTEMBER 8, 2025',
       title: 'NEW EXPLORATION PROJECT LAUNCHED IN SOUTH AMERICA',
       excerpt: 'Company announces major exploration initiative targeting high-grade copper deposits. Initial drilling program to commence in Q4 2025.',
-      image: '/min (6).jpg',
+      image: 'https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_6_tyd5ov.jpg',
       category: 'Exploration'
     }
   ]
@@ -61,7 +61,7 @@ const News = () => {
       {/* Hero Section */}
       <section 
         className="page-hero" 
-        style={{ backgroundImage: 'url(/min%20(1).jpg)' }}
+        style={{ backgroundImage: 'url(https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/landing_onfdtb.jpg)' }}
       >
         <div className="page-hero-content">
           <h1 className="page-hero-title">NEWS & MEDIA</h1>

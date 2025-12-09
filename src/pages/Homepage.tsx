@@ -197,7 +197,7 @@ const Homepage = () => {
           <div className="case-study-image reveal">
             <img 
 
-              src="/min (5).jpg" 
+              src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397091/min_5_iisxwm.jpg" 
               alt="DRC Mining Week" 
               className="case-image"
             />
@@ -302,7 +302,7 @@ const Homepage = () => {
         <h2 className="section-title reveal">LATEST NEWS & INSIGHTS</h2>
         <div className="news-grid">
           <div className="news-card reveal">
-            <img src="/min (1).jpg" alt="News 1" className="news-image" />
+            <img src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/landing_onfdtb.jpg" alt="News 1" className="news-image" />
             <div className="news-content">
               <p className="news-date">DECEMBER 1, 2025</p>
               <h3 className="news-title">
@@ -316,7 +316,7 @@ const Homepage = () => {
           </div>
 
           <div className="news-card reveal">
-            <img src="/min (3).jpg" alt="News 2" className="news-image" />
+            <img src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_3_q5bn0x.jpg" alt="News 2" className="news-image" />
             <div className="news-content">
               <p className="news-date">NOVEMBER 20, 2025</p>
               <h3 className="news-title">
@@ -330,7 +330,7 @@ const Homepage = () => {
           </div>
 
           <div className="news-card reveal">
-            <img src="/min (4).jpg" alt="News 3" className="news-image" />
+            <img src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_4_l3ijmr.jpg" alt="News 3" className="news-image" />
             <div className="news-content">
               <p className="news-date">NOVEMBER 10, 2025</p>
               <h3 className="news-title">

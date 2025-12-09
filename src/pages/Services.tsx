@@ -9,7 +9,7 @@ const Services = () => {
       {/* Hero Section */}
       <section 
         className="page-hero" 
-        style={{ backgroundImage: 'url(/min%20(1).jpg)' }}
+        style={{ backgroundImage: 'url(https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/landing_onfdtb.jpg)' }}
       >
         <div className="page-hero-content">
           <h1 className="page-hero-title">OUR SERVICES</h1>
@@ -73,7 +73,7 @@ const Services = () => {
           <div className="grid-2">
             <div className="reveal-left">
               <img 
-                src="/min (6).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_6_tyd5ov.jpg" 
                 alt="Exploration services" 
                 className="feature-image"
                 style={{ height: '400px' }}
@@ -127,7 +127,7 @@ const Services = () => {
             </div>
             <div className="reveal-right">
               <img 
-                src="/min (3).jpg" 
+                src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397090/min_3_q5bn0x.jpg" 
                 alt="Mining operations" 
                 className="feature-image"
                 style={{ height: '400px' }}
