@@ -1,6 +1,8 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import '../pages/SharedStyles.css'
 
+import { FaUserTie } from 'react-icons/fa'
+
 const BoardMembers = () => {
   useScrollReveal()
 
@@ -27,10 +29,10 @@ const BoardMembers = () => {
             Our Board of Directors brings together experienced professionals and industry leaders dedicated to advancing Nigeria's mining sector
           </p>
           
-          <div className="grid-3">
-            {/* National President */}
-            <div className="team-card reveal">
-              <div className="team-image-container">
+          {/* National President - Featured */}
+          <div className="president-card-container" style={{ maxWidth: '500px', margin: '0 auto 60px' }}>
+            <div className="team-card featured reveal">
+              <div className="team-image-container" style={{ paddingTop: '100%' }}>
                 <img 
                   src="https://res.cloudinary.com/dufw6bsko/image/upload/v1770732847/WhatsApp_Image_2026-02-09_at_10.56.59_1_iqnltz.jpg" 
                   alt="Mr. Dele Ayanleke" 
@@ -38,19 +40,20 @@ const BoardMembers = () => {
                 />
               </div>
               <div className="team-info">
-                <h3 className="team-name">Mr. Dele Ayanleke</h3>
-                <p className="team-position">National President</p>
+                <h3 className="team-name" style={{ fontSize: '1.5rem' }}>Mr. Dele Ayanleke</h3>
+                <p className="team-position" style={{ fontSize: '1.1rem' }}>National President</p>
               </div>
             </div>
+          </div>
 
+          {/* Other Board Members */}
+          <h3 className="section-subtitle" style={{ textAlign: 'center', marginBottom: '40px' }}>Board of Directors</h3>
+          
+          <div className="grid-3">
             {/* 1st Vice President */}
             <div className="team-card reveal">
-              <div className="team-image-container">
-                <img 
-                  src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763543111/slazzer-preview-5qofr_bel3he.png" 
-                  alt="Hon. Ibrahim Muhammad Danyaro" 
-                  className="team-image"
-                />
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
                 <h3 className="team-name">Hon. Ibrahim Muhammad Danyaro</h3>
@@ -60,30 +63,19 @@ const BoardMembers = () => {
 
             {/* 2nd Vice President */}
             <div className="team-card reveal">
-              <div className="team-image-container">
-                <img 
-                  src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763543111/slazzer-preview-5qofr_bel3he.png" 
-                  alt="Hon. Benjamin Obayi" 
-                  className="team-image"
-                />
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
                 <h3 className="team-name">Hon. Benjamin Obayi</h3>
                 <p className="team-position">2nd Vice President</p>
               </div>
             </div>
-          </div>
 
-          {/* Second Row */}
-          <div className="grid-3" style={{ marginTop: '40px' }}>
             {/* National Secretary */}
             <div className="team-card reveal">
-              <div className="team-image-container">
-                <img 
-                  src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763543111/slazzer-preview-5qofr_bel3he.png" 
-                  alt="Alh. Suleiman Liman" 
-                  className="team-image"
-                />
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
                 <h3 className="team-name">Alh. Suleiman Liman</h3>
@@ -93,12 +85,8 @@ const BoardMembers = () => {
 
             {/* National Treasurer */}
             <div className="team-card reveal">
-              <div className="team-image-container">
-                <img 
-                  src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763543111/slazzer-preview-5qofr_bel3he.png" 
-                  alt="Alh. Suleiman Arzuka" 
-                  className="team-image"
-                />
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
                 <h3 className="team-name">Alh. Suleiman Arzuka</h3>
@@ -108,12 +96,8 @@ const BoardMembers = () => {
 
             {/* National Financial Secretary */}
             <div className="team-card reveal">
-              <div className="team-image-container">
-                <img 
-                  src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763543111/slazzer-preview-5qofr_bel3he.png" 
-                  alt="Mr. Tope Adebanjo" 
-                  className="team-image"
-                />
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
                 <h3 className="team-name">Mr. Tope Adebanjo</h3>
@@ -127,11 +111,7 @@ const BoardMembers = () => {
             {/* National Publicity Secretary */}
             <div className="team-card reveal">
               <div className="team-image-container">
-                <img 
-                  src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763543111/slazzer-preview-5qofr_bel3he.png" 
-                  alt="Engr. Fatai Jimoh" 
-                  className="team-image"
-                />
+                
               </div>
               <div className="team-info">
                 <h3 className="team-name">Engr. Fatai Jimoh</h3>
@@ -142,11 +122,7 @@ const BoardMembers = () => {
             {/* Assistant National Secretary */}
             <div className="team-card reveal">
               <div className="team-image-container">
-                <img 
-                  src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763543111/slazzer-preview-5qofr_bel3he.png" 
-                  alt="Alh. Shehu Dinawa" 
-                  className="team-image"
-                />
+                
               </div>
               <div className="team-info">
                 <h3 className="team-name">Alh. Shehu Dinawa</h3>
@@ -157,14 +133,10 @@ const BoardMembers = () => {
             {/* National Legal Advisor */}
             <div className="team-card reveal">
               <div className="team-image-container">
-                <img 
-                  src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763543111/slazzer-preview-5qofr_bel3he.png" 
-                  alt="Alh. Shuhu Birma" 
-                  className="team-image"
-                />
+              
               </div>
               <div className="team-info">
-                <h3 className="team-name">Alh. Shuhu Birma</h3>
+                <h3 className="team-name">Alh. Shehu Birma</h3>
                 <p className="team-position">National Legal Advisor</p>
               </div>
             </div>
