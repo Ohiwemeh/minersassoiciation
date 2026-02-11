@@ -82,8 +82,41 @@ const Contact = () => {
               </div>
               <h3 className="card-title">EMAIL</h3>
               <p className="card-description">
-                General:minersassociationofn25@gmail.com <br />
+                General: minersassociationofn25@gmail.com <br />
               </p>
+            </div>
+          </div>
+
+          {/* Leadership Structure */}
+          <div className="mt-16">
+            <h2 className="section-title reveal">LEADERSHIP STRUCTURE</h2>
+            <div className="grid-2 mt-8">
+              <div className="card reveal">
+                <div className="card-icon">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <h3 className="card-title">LEGAL ADVISER</h3>
+                <p className="card-description">
+                  <strong>Alh Shehu Birma</strong><br />
+                  Legal Adviser, Miners Association of Nigeria
+                </p>
+              </div>
+              <div className="card reveal">
+                <div className="card-icon">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <h3 className="card-title">HEAD OF OPERATIONS</h3>
+                <p className="card-description">
+                  <strong>Ms. Bilqis Audu</strong><br />
+                  Head of Operations, Miners Association of Nigeria
+                </p>
+              </div>
             </div>
           </div>
         </div>

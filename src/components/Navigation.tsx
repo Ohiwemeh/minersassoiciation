@@ -6,7 +6,6 @@ const Navigation = () => {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
-  const [opsOpen, setOpsOpen] = useState(false)
   const [eventsOpen, setEventsOpen] = useState(false)
 
   useEffect(() => {
@@ -37,7 +36,7 @@ const Navigation = () => {
         </button>
 
         <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-          <Link to="/" className="nav-link" onClick={() => { setMobileMenuOpen(false); setAboutOpen(false); setOpsOpen(false); setEventsOpen(false) }}>HOME</Link>
+          <Link to="/" className="nav-link" onClick={() => { setMobileMenuOpen(false); setAboutOpen(false); setEventsOpen(false) }}>HOME</Link>
           <div 
             className={`nav-dropdown ${aboutOpen ? 'open' : ''}`}
             onMouseEnter={() => setAboutOpen(true)}
@@ -51,27 +50,12 @@ const Navigation = () => {
             </button>
             <div className="dropdown-menu">
               <Link to="/about" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setAboutOpen(false) }}>About Us</Link>
-              <Link to="/about/leadership" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setAboutOpen(false) }}>Partners & Owners</Link>
+              <Link to="/about/board-members" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setAboutOpen(false) }}>Board Members</Link>
+              <Link to="/about/management" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setAboutOpen(false) }}>Management Team</Link>
             </div>
           </div>
-          <div 
-            className={`nav-dropdown ${opsOpen ? 'open' : ''}`}
-            onMouseEnter={() => setOpsOpen(true)}
-            onMouseLeave={() => setOpsOpen(false)}
-          >
-            <button 
-              className="nav-link dropdown-toggle"
-              onClick={() => setOpsOpen(!opsOpen)}
-            >
-              OPERATIONS
-            </button>
-            <div className="dropdown-menu">
-              <Link to="/operations" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setOpsOpen(false) }}>Operations</Link>
-              <Link to="/services" className="dropdown-item" onClick={() => { setMobileMenuOpen(false); setOpsOpen(false) }}>Services</Link>
-            </div>
-          </div>
-          {/* <Link to="/programs" className="nav-link" onClick={() => setMobileMenuOpen(false)}>PROGRAMS</Link> */}
-          <Link to="/investors" className="nav-link" onClick={() => setMobileMenuOpen(false)}>INVESTORS</Link>
+          {/* Removed Operations and Investors links */}
+          <Link to="/services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>SERVICES</Link>
           <Link to="/membership" className="nav-link" onClick={() => setMobileMenuOpen(false)}>MEMBERSHIP</Link>
           <Link to="/news" className="nav-link" onClick={() => setMobileMenuOpen(false)}>NEWS</Link>
           <div 

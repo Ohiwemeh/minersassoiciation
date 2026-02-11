@@ -350,9 +350,14 @@ const Membership = () => {
             <button className="btn btn-primary" style={{ marginRight: '20px' }}>
               APPLY FOR MEMBERSHIP
             </button>
-            <button className="btn btn-outline-light">
+            <a 
+              href="https://drive.google.com/file/d/1KsgZULEb8mX7QH5wjcmHCzQ3G9bdp4cC/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-light"
+            >
               DOWNLOAD APPLICATION FORM
-            </button>
+            </a>
           </div>
         </div>
       </section>

@@ -65,33 +65,33 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* Why VUKA Section */}
+      {/* Why Miners Association Section */}
       <section className="services-section">
-        <h2 className="section-title reveal">Why Miners Association?</h2>
+        <h2 className="section-title reveal">Why Miners Association of Nigeria?</h2>
         <div className="vuka-intro reveal">
           <p className="vuka-description">
-            We connect people & organisations to information and each other through signature in-person and digital environments. Creating the conditions for extraordinary change, supporting Africa to achieve its highest potential.
+            As the umbrella body for all mining-related trade and industry in Nigeria, the Miners Association of Nigeria (MAN) has been at the forefront of promoting and protecting the interests of miners since 1944. We are committed to fostering sustainable mining practices and driving economic growth in Nigeria's solid minerals sector.
           </p>
         </div>
         <div className="services-grid">
           <div className="service-card reveal">
-            <h3 className="service-title">Creating Opportunity in Connection</h3>
+            <h3 className="service-title">Unified Voice for Miners</h3>
             <p className="service-description">
-              Open the door to more conversations and opportunities through Miners Association events, exhibitions & industry news. Compelling entry form to learn how to generate more connections within Africa.
+              We represent and advocate for the interests of all miners in Nigeria, from artisanal and small-scale miners to large-scale operators, ensuring your voice is heard at all levels of government.
             </p>
           </div>
 
           <div className="service-card reveal">
-            <h3 className="service-title">Dedicated to Africa</h3>
+            <h3 className="service-title">Industry Leadership</h3>
             <p className="service-description">
-              Explore opportunity in every connection, digital or in-person across the African continent. Miners Association has been connecting businesses in Africa for 20 years, providing unparalleled access to key contacts, innovative thinking and business opportunities.
+              With over 75 years of experience, we provide thought leadership, policy guidance, and technical expertise to drive the sustainable development of Nigeria's mining sector.
             </p>
           </div>
 
           <div className="service-card reveal">
-            <h3 className="service-title">Access The News Cycle Your Industry Relies On</h3>
+            <h3 className="service-title">Capacity Building</h3>
             <p className="service-description">
-              Gain insights and knowledge via the industry's most trusted source of information. Seize the opportunity to keep your finger on the pulse and have your company featured for the industries most influential figures to see.
+              We offer training programs, workshops, and resources to enhance the skills and knowledge of our members, ensuring they operate efficiently, safely, and in compliance with regulations.
             </p>
           </div>
         </div>
@@ -138,100 +138,61 @@ const Homepage = () => {
 
       {/* Industry Sectors Section */}
       <section className="products-section">
-        <h2 className="section-title reveal">Industry Sectors We Serve</h2>
+        <h2 className="section-title reveal">Our Focus Areas</h2>
+        <p className="section-subtitle reveal" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 40px' }}>
+          The Miners Association of Nigeria serves as the umbrella body for all categories of miners, providing representation, support, and advocacy across these key areas:
+        </p>
         <div className="products-grid">
           <div className="product-card reveal">
-            <h3 className="product-title">Mining</h3>
+            <h3 className="product-title">Artisanal & Small-Scale Mining</h3>
             <p className="product-description">
-              Local knowledge is key in the African mining industry. Leverage Miners Association's 20 years' on-the-ground experience to connect with key stakeholders.
+              Supporting the backbone of Nigeria's mining sector through capacity building, formalization, and access to markets and finance.
             </p>
             <ul className="service-list">
-              <li>✓ High engagement levels across digital, magazine and in-person channels across Africa</li>
-              <li>✓ Trusted by regional SME's, Corporates & Governments</li>
-              <li>✓ Largest exhibition in Africa's hottest mining destinations</li>
+              <li>✓ Training and capacity development programs</li>
+              <li>✓ Formalization and best practices</li>
+              <li>✓ Access to funding and equipment</li>
+              <li>✓ Market linkages and value addition</li>
             </ul>
           </div>
 
           <div className="product-card reveal">
-            <h3 className="product-title">Energy</h3>
+            <h3 className="product-title">Large-Scale Mining Operations</h3>
             <p className="product-description">
-              Discover the place where innovators and industry titans meet. Miners Association hosts some of the key platforms where members of the energy ecosystem connect.
+              Facilitating the growth of industrial mining operations through policy advocacy and stakeholder engagement.
             </p>
             <ul className="service-list">
-              <li>✓ Reach a qualified African energy audience of &gt;88,000 contacts</li>
-              <li>✓ Market leading industry news and resource media</li>
-              <li>✓ Mapping Africa's Energy Transition</li>
+              <li>✓ Policy and regulatory advocacy</li>
+              <li>✓ Investment promotion</li>
+              <li>✓ Community relations and social license to operate</li>
+              <li>✓ Technology transfer and innovation</li>
             </ul>
           </div>
 
           <div className="product-card reveal">
-            <h3 className="product-title">Smart Mobility</h3>
+            <h3 className="product-title">Mineral Processing & Value Addition</h3>
             <p className="product-description">
-              Key players in EV's, transport and infrastructure connect through Miners Association media & events. We're able to reach suppliers, buyers, innovators, investors & policy makers.
+              Promoting local beneficiation and value addition to minerals for economic development and job creation.
             </p>
             <ul className="service-list">
-              <li>✓ Latest industry news and technical information</li>
-              <li>✓ The only Electric Vehicle Road Trip in Africa</li>
-              <li>✓ Stakeholder Partners to Influence Adoption</li>
+              <li>✓ Technology and skills development</li>
+              <li>✓ Market access and trade facilitation</li>
+              <li>✓ Quality control and standardization</li>
+              <li>✓ Research and development</li>
             </ul>
           </div>
 
           <div className="product-card reveal">
-            <h3 className="product-title">Retail</h3>
+            <h3 className="product-title">Regulatory Compliance & Standards</h3>
             <p className="product-description">
-              Miners Association connects cutting edge technologists with the businesses searching for their solutions. Discover the latest in UX, ecommerce & digital marketing.
+              Ensuring members operate within the legal framework while maintaining best practices in environmental and social governance.
             </p>
             <ul className="service-list">
-              <li>✓ Internationally recognised experts</li>
-              <li>✓ Showcase of new technology solutions</li>
-              <li>✓ Exciting blend of digital and in-person solutions to connect the sector</li>
+              <li>✓ Regulatory guidance and compliance</li>
+              <li>✓ Environmental and social governance</li>
+              <li>✓ Health and safety standards</li>
+              <li>✓ Certification and accreditation</li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Case Study Section */}
-      <section className="case-study-section">
-        <h2 className="section-title reveal">Success Stories</h2>
-        <div className="case-study-content">
-          <div className="case-study-image reveal">
-            <img 
-
-              src="https://res.cloudinary.com/dufw6bsko/image/upload/v1763397091/min_5_iisxwm.jpg" 
-              alt="DRC Mining Week" 
-              className="case-image"
-            />
-          </div>
-          <div className="case-study-text reveal">
-            <h3 className="case-study-title">Strengthening presence in the DRC mining sector</h3>
-            <div className="case-study-client">
-              <h4>Client:</h4>
-              <p>Mining Engineering Services (MES)</p>
-            </div>
-            <div className="case-study-section-content">
-              <h4>Objective:</h4>
-              <p>
-                MES aimed to strengthen its presence in the mining sector of the DRC, showcase its expertise in delivering cutting-edge engineering solutions, and build direct relationships with decision-makers and project leaders from mining companies. With the DRC Mining Week being a premier event in the region, MES sought to leverage this platform to emphasize its commitment to infrastructure development and reliable services, particularly in scaffolding, energy, and construction support.
-              </p>
-            </div>
-            <div className="case-study-section-content">
-              <h4>Solution:</h4>
-              <p>
-                MES participated in the DRC Mining Week as a key sponsor and exhibitor. The company's stand showcased a comprehensive portfolio, including scaffolding solutions, HDPE pipes for water projects, cable manufacturing through Congo Cables and Transformers (CCT), and its expertise in renewable energy projects. MES also actively engaged in panel discussions and networking sessions to highlight its role in driving sustainable growth in the mining sector.
-              </p>
-            </div>
-            <div className="case-study-section-content">
-              <h4>Results:</h4>
-              <p>
-                The event significantly boosted MES's visibility among industry leaders. As a direct result of its participation, MES secured multiple business enquiries. Additionally, MES forged new partnerships with prominent companies in the mining sector as well as other allied industries, setting the stage for long-term collaborations in infrastructure development.
-              </p>
-            </div>
-            <div className="case-study-quote">
-              <blockquote>
-                "MES's participation in the DRC Mining Week not only reinforced its position as a leader in engineering solutions but also highlighted its role in supporting the region's industrial growth. We are excited to collaborate with a company that prioritizes innovation and sustainability."
-              </blockquote>
-              <p className="quote-author">- Mr Manoj Patil, Director</p>
-            </div>
           </div>
         </div>
       </section>

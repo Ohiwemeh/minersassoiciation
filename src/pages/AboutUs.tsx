@@ -276,14 +276,47 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Leadership Team */}
+      {/* Board Members & Management Team */}
       <section className="content-section gray">
-        <div className="section-container" style={{ textAlign: 'center' }}>
-          <h2 className="section-title reveal">LEADERSHIP TEAM</h2>
-          <p className="section-subtitle reveal">
-            Meet the people guiding our mission and strategy across the association.
+        <div className="section-container">
+          <h2 className="section-title reveal">BOARD MEMBERS & MANAGEMENT TEAM</h2>
+          <p className="section-subtitle reveal" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 40px' }}>
+            Our leadership team brings together experienced professionals dedicated to advancing Nigeria's mining industry.
           </p>
-          <Link to="/about/leadership" className="btn btn-primary reveal">VIEW TEAM</Link>
+          
+          <div className="grid-2">
+            <div className="card reveal">
+              <div className="card-icon">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 className="card-title">BOARD MEMBERS</h3>
+              <p className="card-description">
+                Our Board of Directors provides strategic guidance and oversight, ensuring the Association remains focused on its mission to promote and protect the interests of miners in Nigeria.
+              </p>
+              <Link to="/about/board-members" className="btn btn-text" style={{ marginTop: '15px' }}>View Board Members →</Link>
+            </div>
+            
+            <div className="card reveal">
+              <div className="card-icon">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 className="card-title">MANAGEMENT TEAM</h3>
+              <p className="card-description">
+                Our dedicated management team works tirelessly to implement the Association's vision, manage daily operations, and provide valuable services to our members across Nigeria.
+              </p>
+              <Link to="/about/management" className="btn btn-text" style={{ marginTop: '15px' }}>Meet the Team →</Link>
+            </div>
+          </div>
         </div>
       </section>
 

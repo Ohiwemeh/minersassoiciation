@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+
+ .sib_form_container { padding: 30px; 
+    background-color: #ffffff;
+     border: 1px solid #e5e5e5;
+      border-radius: 8px; 
+       box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+       max-width: 600px; 
+        margin: 20px auto; 
+         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; } 
+        .sib_form_container p, .sib_form_container label { font-size: 15px;
+             font-weight: 600;
+              color: #444; 
+               margin-bottom: 8px; display: block; } 
+               .sib_form_container input[type="text"],
+                .sib_form_container input[type="email"],
+                 .sib_form_container select, .sib_form_container textarea { width: 100%; padding: 12px 15px; 
+                     border: 1px solid #ccc;
+                      border-radius: 4px;
+                       background-color: #fcfcfc; 
+                       font-size: 16px;
+                        color: #333;
+                         box-sizing: border-box; 
+                         margin-bottom: 15px; 
+                         transition: all 0.2s ease-in-out; } 
+                         .sib_form_container 
+                         input:focus, .sib_form_container textarea:focus { border-color: #0073e6;background-color: #fff;
+                             outline: none; box-shadow: 0 0 0 3px rgba(0, 115, 230, 0.1);  }
+                              .sib_form_container input[type="checkbox"] { width: auto !important; margin-right: 10px; transform: scale(1.2);  } .sib_form_container .sib-CARE_NEEDS-area label { font-weight: normal; cursor: pointer; } .sib_form_container .sib-default-btn { width: 100%; padding: 15px; background-color: #2c3e50; color: #ffffff; font-size: 16px; font-weight: 700; border: none; border-radius: 4px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; transition: background 0.3s ease; margin-top: 10px; }.sib_form_container .sib-default-btn:hover { background-color: #1a252f; transform: translateY(-1px);  }

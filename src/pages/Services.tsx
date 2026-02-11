@@ -1,8 +1,16 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import { useNavigate } from 'react-router'
 import '../pages/SharedStyles.css'
 
 const Services = () => {
   useScrollReveal()
+  const navigate = useNavigate()
+
+  const handleConsultationRequest = () => {
+    // In a real application, this would redirect to a payment page
+    // For now, we'll navigate to a contact page or show a modal
+    navigate('/contact?consultation=true')
+  }
 
   return (
     <div className="page-container">
@@ -93,8 +101,12 @@ const Services = () => {
                 <li>Target generation and prioritization</li>
                 <li>Exploration data management systems</li>
               </ul>
-              <button className="btn btn-outline" style={{ marginTop: '20px' }}>
-                REQUEST EXPLORATION SERVICES
+              <button 
+                className="btn btn-primary" 
+                style={{ marginTop: '20px' }}
+                onClick={handleConsultationRequest}
+              >
+                REQUEST A CONSULTATION
               </button>
             </div>
           </div>
@@ -121,8 +133,12 @@ const Services = () => {
                 <li>Production monitoring and reporting</li>
                 <li>Cost control and budget management</li>
               </ul>
-              <button className="btn btn-outline" style={{ marginTop: '20px' }}>
-                LEARN MORE ABOUT OPERATIONS
+              <button 
+                className="btn btn-primary" 
+                style={{ marginTop: '20px' }}
+                onClick={handleConsultationRequest}
+              >
+                REQUEST A CONSULTATION
               </button>
             </div>
             <div className="reveal-right">
