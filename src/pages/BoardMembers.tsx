@@ -46,72 +46,69 @@ const BoardMembers = () => {
             </div>
           </div>
 
-          {/* Other Board Members */}
+          {/* Board Members List */}
           <h3 className="section-subtitle" style={{ textAlign: 'center', marginBottom: '40px' }}>Board of Directors</h3>
           
           <div className="grid-3">
-            {/* 1st Vice President */}
+            {/* Board Member 1 */}
             <div className="team-card reveal">
               <div className="team-image-container no-image">
                 <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
-                <h3 className="team-name">Hon. Ibrahim Muhammad Danyaro</h3>
-                <p className="team-position">1st Vice President</p>
+                <h3 className="team-name">Hon. Ibrahim Danyaro</h3>
+                <p className="team-position">1ST VICE PRESIDENT</p>
               </div>
             </div>
 
-            {/* 2nd Vice President */}
+            {/* Board Member 3 */}
             <div className="team-card reveal">
               <div className="team-image-container no-image">
                 <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
-                <h3 className="team-name">Hon. Benjamin Obayi</h3>
-                <p className="team-position">2nd Vice President</p>
+                <h3 className="team-name">Hon. Benjamin</h3>
+                <p className="team-position">2ND VICE PRESIDENT</p>
               </div>
             </div>
 
-            {/* National Secretary */}
+            {/* Board Member 4 */}
             <div className="team-card reveal">
               <div className="team-image-container no-image">
                 <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
-                <h3 className="team-name">Alh. Suleiman Liman</h3>
-                <p className="team-position">National Secretary</p>
+                <h3 className="team-name">Alh. Sulaiman Liman</h3>
+                <p className="team-position">NATIONAL SECRETARY</p>
               </div>
             </div>
 
-            {/* National Treasurer */}
+            {/* Board Member 5 */}
             <div className="team-card reveal">
               <div className="team-image-container no-image">
                 <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
                 <h3 className="team-name">Alh. Suleiman Arzuka</h3>
-                <p className="team-position">National Treasurer</p>
+                <p className="team-position">NATIONAL TREASURER</p>
               </div>
             </div>
 
-            {/* National Financial Secretary */}
+            {/* Board Member 6 */}
             <div className="team-card reveal">
               <div className="team-image-container no-image">
                 <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
                 <h3 className="team-name">Mr. Tope Adebanjo</h3>
-                <p className="team-position">National Financial Secretary</p>
+                <p className="team-position">NATIONAL FINANCIAL SECRETARY</p>
               </div>
             </div>
-          </div>
 
-          {/* Third Row */}
-          <div className="grid-3" style={{ marginTop: '40px' }}>
-            {/* National Publicity Secretary */}
+            {/* Board Member 7 */}
             <div className="team-card reveal">
-              <div className="team-image-container">
-                
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
                 <h3 className="team-name">Engr. Fatai Jimoh</h3>
@@ -119,10 +116,10 @@ const BoardMembers = () => {
               </div>
             </div>
 
-            {/* Assistant National Secretary */}
+            {/* Board Member 8 */}
             <div className="team-card reveal">
-              <div className="team-image-container">
-                
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
                 <h3 className="team-name">Alh. Shehu Dinawa</h3>
@@ -130,17 +127,30 @@ const BoardMembers = () => {
               </div>
             </div>
 
-            {/* National Legal Advisor */}
+            {/* Board Member 9 */}
             <div className="team-card reveal">
-              <div className="team-image-container">
-              
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
               </div>
               <div className="team-info">
-                <h3 className="team-name">Alh. Shehu Birma</h3>
+                <h3 className="team-name">Barr. Shehu Birma</h3>
                 <p className="team-position">National Legal Advisor</p>
               </div>
             </div>
+
+            {/* Board Member 10 */}
+            <div className="team-card reveal">
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
+              </div>
+              <div className="team-info">
+                <h3 className="team-name">Ms. Bilqis Audu</h3>
+                <p className="team-position">Head of Operations</p>
+              </div>
+            </div>
           </div>
+
+
         </div>
       </section>
 
@@ -194,6 +204,111 @@ const BoardMembers = () => {
                 Ensures effective board composition, director recruitment, and governance best practices.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Board of Trustees Section */}
+      <section className="content-section">
+        <div className="section-container">
+          <h2 className="section-title reveal">BOARD OF TRUSTEES</h2>
+          <p className="section-subtitle reveal" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 40px' }}>
+            Our esteemed Board of Trustees provides strategic guidance and oversight to ensure the association's long-term success
+          </p>
+          
+          <div className="grid-3">
+            <div className="team-card reveal">
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
+              </div>
+              <div className="team-info">
+                <h3 className="team-name">Alh. Sani Shehu</h3>
+                <p className="team-position">Chairman</p>
+              </div>
+            </div>
+
+            <div className="team-card reveal">
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
+              </div>
+              <div className="team-info">
+                <h3 className="team-name">Engr. Niran Ajibade</h3>
+                <p className="team-position">Member</p>
+              </div>
+            </div>
+
+            <div className="team-card reveal">
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
+              </div>
+              <div className="team-info">
+                <h3 className="team-name">Hajiya Hauwa Ibrahim</h3>
+                <p className="team-position">Member</p>
+              </div>
+            </div>
+
+            <div className="team-card reveal">
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
+              </div>
+              <div className="team-info">
+                <h3 className="team-name">Hon. Benjamin Obayi</h3>
+                <p className="team-position">Member</p>
+              </div>
+            </div>
+
+            <div className="team-card reveal">
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
+              </div>
+              <div className="team-info">
+                <h3 className="team-name">Barr. Shehu Birma</h3>
+                <p className="team-position">Member</p>
+              </div>
+            </div>
+
+            <div className="team-card reveal">
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
+              </div>
+              <div className="team-info">
+                <h3 className="team-name">Alh. Aminu Yau</h3>
+                <p className="team-position">Member</p>
+              </div>
+            </div>
+
+            <div className="team-card reveal">
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
+              </div>
+              <div className="team-info">
+                <h3 className="team-name">Mr. Enebeli Kennedy</h3>
+                <p className="team-position">Member</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Management Team Section */}
+      <section className="content-section gray">
+        <div className="section-container">
+          <h2 className="section-title reveal">MANAGEMENT TEAM</h2>
+          <p className="section-subtitle" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 40px' }}>
+            Our dedicated management team works tirelessly to implement the association's vision and serve our members
+          </p>
+          
+          <div className="grid-3">
+            <div className="team-card reveal">
+              <div className="team-image-container no-image">
+                <FaUserTie className="placeholder-icon" />
+              </div>
+              <div className="team-info">
+                <h3 className="team-name">Ms. Bilqis Audu</h3>
+                <p className="team-position">Head of Operations</p>
+              </div>
+            </div>
+            {/* Add more management team members as needed */}
           </div>
         </div>
       </section>
